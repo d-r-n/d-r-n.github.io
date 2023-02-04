@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 
 <html>
-
 <head>
-
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <style>
 
 body {
@@ -22,7 +19,6 @@ body {
   background-color: #F5F5F5;
   overflow-x: hidden;
   padding-top: 20px;
-
 }
 
 .sidenav a {
@@ -35,7 +31,6 @@ body {
 
 .sidenav a:hover {
   color: #064579;
-
 }
 
 
@@ -43,7 +38,6 @@ body {
   margin-left: 120px; /* Same width as the sidebar + left position in px */
   font-size: 16px; /* Increased text to enable scrolling */
   padding: 0px 10px;
-
 }
 
 @media screen and (max-height: 450px) {
@@ -72,6 +66,22 @@ body {
 img.center {
     display: block;
     margin: 0 auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.imgbox {
+    display: grid;
+    height: 100%;
+}
+
+.center-fit {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
 }
 
 
@@ -245,15 +255,15 @@ img.center {
         <section id="photos">
 
             <h3>Photos</h3>
-            <img src="/d-r-n.github.io/assets/queenstown.jpg" style="height:250px"/>
-            <img src="/d-r-n.github.io/assets/mtcook.jpg" style="height:250px"/>
-            <img src="/d-r-n.github.io/assets/dubaidesert.jpg" style="height:250px"/>
-            <img src="/d-r-n.github.io/assets/glacier.jpg" style="height:250px"/>
-            <img src="/d-r-n.github.io/assets/singapore.jpg" style="height:250px"/>
-            <img src="/d-r-n.github.io/assets/ranch_stars.jpg" style="height:250px"/>
-            <img src="/d-r-n.github.io/assets/ranch_stars2.jpg" style="height:250px"/>
-            <img src="/d-r-n.github.io/assets/fort_cochin.jpg" style="height:250px"/>
-            <img src="/d-r-n.github.io/assets/tekapo.jpg" style="height:250px"/>
+            <img class="center-fit" src="/d-r-n.github.io/assets/queenstown.jpg" style="height:250px"/>
+            <img class="center-fit" src="/d-r-n.github.io/assets/mtcook.jpg" style="height:250px"/>
+            <img class="center-fit" src="/d-r-n.github.io/assets/dubaidesert.jpg" style="height:250px"/>
+            <img class="center-fit" src="/d-r-n.github.io/assets/glacier.jpg" style="height:250px"/>
+            <img class="center-fit" src="/d-r-n.github.io/assets/singapore.jpg" style="height:250px"/>
+            <img class="center-fit" src="/d-r-n.github.io/assets/ranch_stars.jpg" style="height:250px"/>
+            <img class="center-fit" src="/d-r-n.github.io/assets/ranch_stars2.jpg" style="height:250px"/>
+            <img class="center-fit" src="/d-r-n.github.io/assets/fort_cochin.jpg" style="height:250px"/>
+            <img class="center-fit" src="/d-r-n.github.io/assets/tekapo.jpg" style="height:250px"/>
 
 
 
