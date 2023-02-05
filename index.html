@@ -126,6 +126,25 @@ img.center {
     margin-left: 80px;
 }
 
+
+a {
+  position: relative
+}
+
+a span {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background: rgba(255,255,255,.8);
+}
+
+a:hover span {
+  display: block
+}
+
+
 </style>
 </head>
 <link rel="shortcut icon" type="image/x-icon" href="/d-r-n.github.io/assets/favicon.ico">
@@ -179,7 +198,7 @@ img.center {
          <!--Photography Section-->
         <section id="photos">
             <h3>Photos</h3>
-            <p style="float: center;"><img class="center-fit" src="/d-r-n.github.io/assets/queenstown.jpg"/></p>
+            <p style="float: center;"><img class="center-fit" src="/d-r-n.github.io/assets/queenstown.jpg"/><span>Lake Wakatipu, Queenstown NZ</span></p>
             <p style="float: center;"><img class="center-fit" src="/d-r-n.github.io/assets/mtcook.jpg"/></p>
             <p style="float: center;"><img class="center-fit" src="/d-r-n.github.io/assets/dubaidesert.jpg"/></p>
             <p style="float: center;"><img class="center-fit" src="/d-r-n.github.io/assets/glacier.jpg" /></p>
