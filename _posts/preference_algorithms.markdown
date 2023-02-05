@@ -1,4 +1,4 @@
-# An examination of social media & content platforms in an age of increased public scrutiny, legislative pressure, and generative AI
+# Personal Preference Algorithms 
 
 ## An examination of social media & content platforms in an age of increased public scrutiny, legislative pressure, and generative AI
 
