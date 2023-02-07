@@ -36,8 +36,3 @@ We should provide users with a higher degree of control over the algorithms that
 By giving users the ability to parameterize content recommendations, platforms can help to ensure that their algorithms are not solely driven by user activity, but also reflect the values and interests of their users. Users will have more personalized online experiences while platforms will reduce the risk of exposing users to content found inappropriate or irrelevant.
 
 By linking recommendations directly to explicitly defined user interests, transparency is embedded into the recommendation algorithms. This elevates user accountability for the content they receive, allowing platforms to partly transfer responsibility to users. This results in a more personalized and accountable online experience for users and a transparent recommendation system.
-
-
-
-
-
