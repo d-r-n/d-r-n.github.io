@@ -31,4 +31,15 @@ Since their inception, social media companies have insisted on self-governance. 
 This trend will continue—we can expect increased demand for broad legislative measures that provide higher levels of transparency into algorithmic bias, safeguards for users, and accountability among platforms. I imagine legislators will even call these bills something like the Algorithmic Transparency Act, or the Platform Responsibility Bill.
 
 ### A path forward
-We should provide users with a higher degree of control over the algorithms that filter and rank content. Rather than having algorithms that are passively trained on user activity, allow users to directly embed their values and interest into ranking algorithms. Active controls empower users to have more of control over their content consumption. In doing so, the focal point of responsibility shifts from platforms to users. This benefits users and platforms—users parameterize content recommendations and platforms appease legislators with respect to responsible AI and transparency legislation headwinds.
+We should provide users with a higher degree of control over the algorithms that filter and rank content. Rather than having algorithms that are passively trained on user activity, allow users to directly embed their values and interest into ranking algorithms.This offers several benefits to both users and platforms. Users can actively shape the content they are recommended and ensure that it’s aligned with their preferences, and platforms can demonstrate their commitment to responsible AI and transparency. 
+
+By giving users the ability to parameterize content recommendations, platforms can help to ensure that their algorithms are not solely driven by user activity, but also reflect the values and interests of their users. Users will have more personalized online experiences while platforms will reduce the risk of exposing users to content found inappropriate or irrelevant.
+
+This embeds transparency into recommendation algorithms--each recommendation can be directly linked to an explicitly defined interest or a set of interests. In turn, this increases user accountability for recommended content, which means platforms can partly shift the burden of responsibility from themselves to their users.
+
+Empowering users with direct control over content-ranking algorithms offers numerous benefits. By allowing them to embed their values and interests into the algorithms, users can personalize their online experience and avoid irrelevant or inappropriate content. At the same time, this shift of responsibility from platforms to users helps platforms demonstrate their commitment to responsible AI and transparency. This not only provides users with a more personalized online experience but also embeds transparency into recommendation algorithms, leading to a more accountable system for everyone involved.
+
+
+
+
+
