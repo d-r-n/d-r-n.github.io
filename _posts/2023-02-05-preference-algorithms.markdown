@@ -12,7 +12,7 @@ mathjax: false
     max-width: 900px;
 }
 p {
-    font-family: sans-serif;
+    font-family:"Lato" sans-serif;
     font-size: 15px;
     font-weight: 300;
     overflow-wrap: break-word; /* allow wrapping of very very long strings, like txids */
