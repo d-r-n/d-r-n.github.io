@@ -7,31 +7,6 @@ date:   2023-02-05
 mathjax: false
 ---
 
-<style>
-.wrap {
-    max-width: 900px;
-}
-p {
-    font-family:"Lato" sans-serif;
-    font-size: 15px;
-    font-weight: 300;
-    overflow-wrap: break-word; /* allow wrapping of very very long strings, like txids */
-}
-.post pre,
-.post code {
-    background-color: #fafafa;
-    font-size: 13px; /* make code smaller for this post... */
-}
-pre {
- white-space: pre-wrap;       /* css-3 */
- white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
- white-space: -pre-wrap;      /* Opera 4-6 */
- white-space: -o-pre-wrap;    /* Opera 7 */
- word-wrap: break-word;       /* Internet Explorer 5.5+ */
-}
-</style>
-
-
 ### The state of data generation
 The internet is exploding, and content platforms are ground zero. Every day there are 1B stories posted on Facebook, 95M photos and video posted on Instagram, 400k hours streamed on Netflix, 650 million Tweets and 2B videos watched on Twitter. Data produced and consumed through 2022 adds up to 9.4e+22 bytes of data (94T GBs). By 2025, this will be 5.3e+20 bytes per day (~500B GBs/day).
 
