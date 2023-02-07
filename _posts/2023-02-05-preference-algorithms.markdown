@@ -1,5 +1,5 @@
 ---
-layout: posttt
+layout: post
 comments: true
 title:  "Personal Preference Algorithms"
 excerpt: "An examination of social media & content platforms in an age of increased public scrutiny, legislative pressure, and generative AI"
