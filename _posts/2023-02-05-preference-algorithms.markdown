@@ -35,9 +35,7 @@ We should provide users with a higher degree of control over the algorithms that
 
 By giving users the ability to parameterize content recommendations, platforms can help to ensure that their algorithms are not solely driven by user activity, but also reflect the values and interests of their users. Users will have more personalized online experiences while platforms will reduce the risk of exposing users to content found inappropriate or irrelevant.
 
-This embeds transparency into recommendation algorithms--each recommendation can be directly linked to an explicitly defined interest or a set of interests. In turn, this increases user accountability for recommended content, which means platforms can partly shift the burden of responsibility from themselves to their users.
-
-Empowering users with direct control over content-ranking algorithms offers numerous benefits. By allowing them to embed their values and interests into the algorithms, users can personalize their online experience and avoid irrelevant or inappropriate content. At the same time, this shift of responsibility from platforms to users helps platforms demonstrate their commitment to responsible AI and transparency. This not only provides users with a more personalized online experience but also embeds transparency into recommendation algorithms, leading to a more accountable system for everyone involved.
+By linking recommendations directly to explicitly defined user interests, transparency is embedded into the recommendation algorithms. This elevates user accountability for the content they receive, allowing platforms to partly transfer responsibility to users. This results in a more personalized and accountable online experience for users and a transparent recommendation system.
 
 
 
