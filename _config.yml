@@ -1,12 +1,7 @@
-site
+google_analytics: G-Y3YZC398YT
 
+- theme: minima
++ remote_theme: jekyll/minima
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y3YZC398YT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-Y3YZC398YT');
-</script>
+  plugins:
++ - jekyll-remote-theme
