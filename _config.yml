@@ -1,7 +1,1 @@
 google_analytics: G-Y3YZC398YT
-
-- theme: minima
-+ remote_theme: jekyll/minima
-
-  plugins:
-+ - jekyll-remote-theme
