@@ -1,0 +1,12 @@
+---
+layout: post
+comments: true
+title:  "Turing Test Pitfall"
+excerpt:
+date: 2023-02-23
+mathjax: false
+---
+
+In recent discussions, both with people who work on AI and others who have cursory interest, the topic of intelligence has come up. Sometimes the person I'm speaking with will assert that a language model that passes the Turing Test is indeed intelligent. I think this is a misguided way of thinking about both the Turing Test and intelligence.
+
+Rather than being viewed as a singular test, the Turing Test should be treated as a concept. Any test utilized to gauge a model's intelligence is merely a stand-in for the Turing Test. Creating "the" Turing Test is an impossibility, as a model can be trained to overfit a specific type of test and subsequently learn to pass it. Therefore, it's not sufficient to conclude that a model is intelligent merely because it passed a certain test - a new test must be created.
