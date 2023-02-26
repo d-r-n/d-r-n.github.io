@@ -7,9 +7,9 @@ layout: default
   margin-left: 40px;
   margin-right: 600px;
   position: fixed;
+  z-index: 1;
 }
 </style>
-
 <div class="post">
   <div class="post_pad">
     <header class="post-header">
@@ -18,16 +18,15 @@ layout: default
     <hr>
 
     <p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
+    </header>
 
-  <article class="post-content">
-      {{ content }}
-  </article>
+    <article class="post-content">
+        {{ content }}
+    </article>
 
-  <!-- mathjax -->
-  {% if page.mathjax %}
-  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-  {% endif %}
-
+    <!-- mathjax -->
+    {% if page.mathjax %}
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    {% endif %}
   </div>
 </div>
