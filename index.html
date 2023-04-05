@@ -3,29 +3,34 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-
 body {
   font-family: "Lato", sans-serif;
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .sidenav {
-  height: 100%;
-  width: 120px;
-  position: fixed;
-  z-index: 1;
-  top: 0px;
-  left: 0px;
+  padding-top: 20px;
   background-color: #F5F5F5;
-  overflow-x: hidden;
-  padding-top: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+  width: 100%;
 }
 
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 16px;
+  display: inline-block;
+  margin-right: 20px;
   color: #2196F3;
-  display: block;
+  font-size: 18px;
 }
 
 .sidenav a:hover {
@@ -33,156 +38,103 @@ body {
 }
 
 .main {
-  margin-left: 120px; /* Same width as the sidebar + left position in px */
-  font-size: 16px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
-  padding-top: 10px;
-
+  padding: 20px 10px;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 16px;}
+.main h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
 }
 
-.smalltxt{
-    font-weight:normal;
-    font-size: 12px;
-    /* color: #80800; */
-}​
-
-.smalltxt14{
-    font-weight:normal;
-    font-size: 14px;
-    /* color: #80800; */
-}​
-
-.header img {
-  float: left;
-  width: 100px;
-  height: 100px;
-  background: #555;
+.main h3 {
+  font-size: 28px;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
-.header h1 {
-  position: relative;
-  top: 18px;
-  left: 10px;
-}
-
-img.center {
-    display: block;
-    margin: 0 auto;
-}
-
-.imgbox {
-    display: grid;
-    height: 50%;
-}
-
-.center-fit {
-    display: block;
-    max-width: 50%;
-    max-height: 50;
-    margin: 0 auto;
-}
-
-
-/* Style all font awesome icons */
+/* FontAwesome icons */
 .fa {
-  padding: 10px;
-  font-size: 10px;
-  width: 15px;
+  padding: 8px;
+  font-size: 18px;
+  width: 38px;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
+  margin-right: 10px;
+  background: #707070;
+  color: white;
 }
 
-/* Add a hover effect if you want */
 .fa:hover {
   opacity: 0.7;
 }
 
-/* GitHub */
-.fa-github {
-  background: #707070;
-  color: white;
+.link-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 
-/* Twitter */
-.fa-twitter {
-  background: #707070;
-  color: white;
+.link {
+  margin-right: 5px;
+  color: #064579;
+  text-decoration: none;
 }
 
-/* LinkedIn */
-.fa-linkedin {
-  background: #707070;
-  color: white;
+.link:hover {
+  text-decoration: underline;
 }
 
-.tab {
-    display: inline-block;
-    margin-left: 80px;
+.center {
+  display: flex;
+  justify-content: center;
 }
 
-
-a {
-  position: relative
+@media screen and (max-width: 980px) {
+  .sidenav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
-
-a span {
-  display: none;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 8px;
-  background: rgba(255,255,255,.8);
+@media screen and (max-width: 768px) {
+  .main h1 {
+    font-size: 28px;
+  }
+  
+  .main h3 {
+    font-size: 24px;
+  }
 }
-
-a:hover span {
-  display: block
-}
-
 </style>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y3YZC398YT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-Y3YZC398YT');
-</script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="shortcut icon" type="image/x-icon" href="/d-r-n.github.io/assets/favicon.ico">
 
 <body>
-    <div class="sidenav">
-        <a href="https://dylannikol.com/"> <img src ="/d-r-n.github.io/assets/8bitproilepic.jpg" height="32px" ></a>
-        <a href="#bio">Bio</a>
-        <a href="#projects">Projects</a>
-        <a href="#work">Work</a>
-        <a href="#blog">Blog</a>
-        <a href="#photos">Photos</a>
-        <!-- Email sign up form
-        <p>Email list</p>
-        <form>
-        <input type="email" name="email" placeholder="Email address"><br><br>
-        <input type="submit"  value="Subscribe">
-        </form> -->
+  <div class="sidenav">
+    <div class="container">
+      <a href="https://dylannikol.com/"><img src="/d-r-n.github.io/assets/8bitproilepic.jpg" height="32px"></a>
+      <a href="#bio">Bio</a>
+      <a href="#projects">Projects</a>
+      <a href="#work">Work</a>
+      <a href="#blog">Blog</a>
+      <a href="#photos">Photos</a>
     </div>
-    <div class="main">
-        <p style="float: center;"><img class="center" src ="/d-r-n.github.io/assets/round_profile_pic.png" height="200px" ></p>
-        <h1 align="center">Dylan Nikol</h1>
-        <!-- Add icon library -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!-- Add font awesome icons -->
-        <div style="text-align:center">    
-            <a href="https://twitter.com/dylanrnikol" class="fa fa-twitter"></a>
-            <a href="https://www.linkedin.com/in/dylan-nikol" class="fa fa-linkedin"></a>
-            <a href="https://github.com/d-r-n" class="fa fa-github"></a>
-        </div>
+  </div>
+  <div class="main container">
+    <div class="center">
+      <img class="center" src="/d-r-n.github.io/assets/round_profile_pic.png" height="200px">
+    </div>
+    <h1 align="center">Dylan Nikol</h1>
+
+    <!-- Add FontAwesome icons -->
+    <div class="center">
+      <a href="https://twitter.com/dylanrnikol" class="fa fa-twitter"></a>
+      <a href="https://www.linkedin.com/in/dylan-nikol" class="fa fa-linkedin"></a>
+      <a href="https://github.com/d-r-n" class="fa fa-github"></a>
+    </div>
         <!--About Section-->
         <section id="bio">
             <h3>Bio</h3>
@@ -197,7 +149,6 @@ a:hover span {
                 <p><a href="https://prescene.ai" >prescene.ai</a> AI for film makers [coming soon]</p>
             </ul>
         </section>
-
 
 
         <!--Work Section-->
@@ -252,15 +203,10 @@ a:hover span {
             <a style="float: center;"><img class="center-fit" src="/d-r-n.github.io/assets/tekapo.jpg"/><span class="smalltxt"; style="text-align:center">Lake Tekapo, NZ</span></a>
             </section>
             <!--Footer Section-->
-            <footer>
+        </div>
+        <footer>
             <br>
             <br>
-            <!--
-            <div>
-                <p style="float: center;"><img class="center" src ="/d-r-n.github.io/assets/8bitproilepic.jpg" height="32px" ></p>
-            </div>
-            -->
         </footer>
-    </div>
-</body>
-</html>
+    </body>
+    </html>
