@@ -19,6 +19,51 @@ body {
   width: 100%;
 }
 
+
+.subscribe-text {
+  color: white;
+  font-size: .7rem;
+}
+
+.header-right{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  bottom: 0;
+  padding-bottom: 10px;
+}
+
+.email-form {
+  display: flex;
+}
+
+input[type="email"] {
+  padding: 4px 12px;
+  font-size: 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 200px; /* Decrease the width for better fitting within the header */
+}
+
+button[type="submit"] {
+  margin-left: 2px;
+  padding: 4px 12px;
+  font-size: 12px;
+  background-color: #00ADB5;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #008B93;
+  opacity: 0.8;
+}
+
 .main {
   margin-left: 120px;
   font-size: 16px;
@@ -230,15 +275,25 @@ a:hover span {
 
 <body>
   <div class="header">
-    <a href="https://dylannikol.com/"><img src="/d-r-n.github.io/assets/8bitproilepic.jpg" height="32"></a>
-    <div class="navigation">
-      <a href="#bio">Bio</a>
-      <a href="#projects">Projects</a>
-      <a href="#blog">Blog</a>
-      <a href="#work">Work</a>
-      <a href="#photos">Photos</a>
-    </div>
+  <a href="https://dylannikol.com/"><img src="/d-r-n.github.io/assets/8bitproilepic.jpg" height="32"></a>
+  <div class="navigation">
+    <a href="#bio">Bio</a>
+    <a href="#projects">Projects</a>
+    <a href="#blog">Blog</a>
+    <a href="#work">Work</a>
+    <a href="#photos">Photos</a>
   </div>
+  <div class="header-right">
+     <!-- Move the form into the header -->
+     <div class="subscribe-text">Subscribe to email list</div>
+  <form action="https://docs.google.com/forms/d/e/1FAIpQLSdNVKtc3QboZtEPyTrJYq5u260ESmjcrxpIKPuI-Hfl95Z5ng/formResponse" method="post" target="_blank" class="email-form">
+    <input type="email" name="entry.1797456602" id="email" placeholder="Enter your email" required>
+    <button type="submit">Submit</button>
+  </form>
+
+  </div>
+ 
+</div>
   <div class="main">
     <p style="text-align: center;"><img class="center" src="/d-r-n.github.io/assets/round_profile_pic.png" height="200"></p>
     <h1 align="center">Dylan Nikol</h1>
