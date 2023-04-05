@@ -237,12 +237,37 @@ a:hover span {
   margin: 0 5px;
 }
 
+.email-row {
+  display: none;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.email-row {
+  display: none;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+
 @media screen and (max-width: 576px) {
   .fa {
     font-size: 1rem;
     width: 1rem;
   }
 }
+
+@media screen and (max-width: 576px) {
+  .header-right {
+    /* Add this line to hide form on mobile */
+    display: none;
+  }
+
+  .email-row {
+    display: block;
+  }
 
 </style>
 </head>
@@ -294,6 +319,13 @@ a:hover span {
   </div>
  
 </div>
+<div class="email-row">
+    <div class="subscribe-text">Subscribe to email list</div>
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSdNVKtc3QboZtEPyTrJYq5u260ESmjcrxpIKPuI-Hfl95Z5ng/formResponse" method="post" target="_blank" class="email-form">
+      <input type="email" name="entry.1797456602" id="email" placeholder="Enter your email" required>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
   <div class="main">
     <p style="text-align: center;"><img class="center" src="/d-r-n.github.io/assets/round_profile_pic.png" height="200"></p>
     <h1 align="center">Dylan Nikol</h1>
