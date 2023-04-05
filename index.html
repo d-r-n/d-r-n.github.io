@@ -9,6 +9,7 @@ body {
 
 .header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   position: fixed;
   top: 0;
@@ -33,6 +34,17 @@ body {
   display: block;
   height: 60px; /* height of the fixed header */
   margin-top: -60px; /* negative value of the height of fixed header */
+}
+
+/* Add media query to hide header on mobile devices */
+@media screen and (max-width: 576px) {
+  .header {
+    display: none;
+  }
+  /* Adjust padding-top of main content for header removal */
+  .main {
+    padding-top: 10px;
+  }
 }
 
 .smalltxt{
