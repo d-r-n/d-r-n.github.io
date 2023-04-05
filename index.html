@@ -11,20 +11,29 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
+  position: fixed;
+  top: 0;
   background-color: #F5F5F5;
   z-index: 1000;
   padding: 0.3rem;
-
+  width: 100%;
 }
 
 .main {
   margin-left: 120px;
   font-size: 16px;
   padding: 0px 10px;
-  padding-top: 10px;
+  padding-top: 60px;
   max-width: 1000px;
   margin: 0 auto;
+}
+
+/* New CSS block: Add padding before the sections */
+.section-anchor::before {
+  content: "";
+  display: block;
+  height: 60px; /* height of the fixed header */
+  margin-top: -60px; /* negative value of the height of fixed header */
 }
 
 .smalltxt{
@@ -38,7 +47,7 @@ body {
 }
 
 section {
-  margin-bottom: 80px;
+  margin-bottom: 3rem;
 }
 
 .header img {
@@ -228,19 +237,20 @@ a:hover span {
       <a href="https://www.linkedin.com/in/dylan-nikol" class="fa fa-linkedin"></a>
       <a href="https://github.com/d-r-n" class="fa fa-github"></a>
     </div>
-    <section id="bio">
+    <br><br>
+    <section id="bio" class="section-anchor">
       <h3>Bio</h3>
       <ul>
         <p>I'm an AI practitioner and entrepreneur in Austin Texas. I'm building the tools to support personalized content delivery and platform responsibility in the age of generative AI.<br><br>My research interests include ranking algorithms, graphs, and reinforcement learning. I'm interested in using these technologies to help people to moderate their content consumption. I'm driven by the potential of technology to change our world for the better, and I'm eager to use my skills to make a difference.<br><br>In my day job as a Data Scientist, I build and integrate AI solutions to reduce costs, satisfy customers, and drive business success. Currently I'm building an expert assistant for investor relations by finetuning language models with reinforcement learning.<br><br>Outside of work I like to climb, bike, and ski. Reach out to chat tech or grab tacos.<br><br>Follow on <a href="https://twitter.com/dylanrnikol" >Twitter</a> to connect.</p>
       </ul>
     </section>
-    <section id="projects">
+    <section id="projects" class="section-anchor">
         <h3>Projects</h3>
         <ul>
             <p><a href="https://prescene.ai" >prescene.ai</a> AI for film makers [coming soon]</p>
         </ul>
     </section>
-    <section id="blog">
+    <section id="blog" class="section-anchor">
         <h3>Blog</h3>
         <ul>
             <a href="https://dylannikol.com/2023/02/23/turing.html">Turing Test Pitfall</a>
@@ -248,7 +258,7 @@ a:hover span {
             <a href="https://dylannikol.com/2023/02/05/preference-algorithms.html">Preference Algorithms</a>
         </ul>
     </section>
-    <section id="work">
+    <section id="work" class="section-anchor">
         <h3>Work</h3>
         <ul>
           <strong>Dell Technologies - Data Scientist [2020-]</strong>
@@ -269,7 +279,7 @@ a:hover span {
           <br>
         </ul>
     </section>
-    <section id="photos">
+    <section id="photos" class="section-anchor">
         <h3>Photos</h3>
         <a style="display: block;"><img class="center-fit" src="/d-r-n.github.io/assets/queenstown.jpg"/><span class="smalltxt" style="text-align:center">Lake Wakatipu, Queenstown, NZ</span></a>
         <a style="display: block;"><img class="center-fit" src="/d-r-n.github.io/assets/mtcook.jpg"/><span class="smalltxt" style="text-align:center">Mount Cook National Park, NZ</span></a>
