@@ -27,28 +27,10 @@ body {
   margin: 0 auto;
 }
 
-.navigation {
-  display: none;
-}
 
-.navigation a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 16px;
-  color: #2196F3;
-  display: inline-block;
-}
-
-@media screen and (max-width: 576px) {
-  .navigation {
-    display: flex;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .logo {
-    display: none;
-  }
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 16px;}
 }
 
 .smalltxt{
@@ -206,29 +188,27 @@ a:hover span {
 
 </style>
 </head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y3YZC398YT"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag() {
+    dataLayer.push(arguments);
+  }
   gtag('js', new Date());
 
   gtag('config', 'G-Y3YZC398YT');
-</script>
-<script>
+
+  function scrollToSection(elementId, padding) {
+    const element = document.getElementById(elementId);
+    const yOffset = -padding;
+    const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  }
+
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener("click", function (e) {
+    anchor.addEventListener('click', function (e) {
       e.preventDefault();
-    
-      const target = document.querySelector(this.getAttribute("href"));
-      target.classList.add("scroll-padding");
-
-      target.scrollIntoView({
-        behavior: "smooth",
-      });
-
-      setTimeout(() => {
-        target.classList.remove("scroll-padding");
-      }, 300);
+      const targetId = this.getAttribute('href').slice(1);
+      scrollToSection(targetId, 70); // 70px padding to account for header height
     });
   });
 </script>
@@ -237,7 +217,7 @@ a:hover span {
 
 <body>
   <div class="header">
-    <a href="https://dylannikol.com/"><img src="/d-r-n.github.io/assets/8bitproilepic.jpg" height="32" class="logo"></a>
+    <a href="https://dylannikol.com/"><img src="/d-r-n.github.io/assets/8bitproilepic.jpg" height="32"></a>
     <div class="navigation">
       <a href="#bio">Bio</a>
       <a href="#projects">Projects</a>
