@@ -3,6 +3,7 @@ layout: default
 ---
 
 <style>
+  
 .post {
   display: flex;
   justify-content: center;
@@ -56,13 +57,18 @@ layout: default
   min-width: 600px;
 }
 {% endif %}
+
+
 </style>
 
 <div class="post">
   <div class="post-content-container">
     <header class="post-header">
+      <hr>
       <h2>{{ page.title }}</h2>
+      {% if page.excerpt %}
       <p class="excerpt">{{ page.excerpt }}</p>
+      {% endif %}
       <hr>
       <p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} &bull; {{ page.author }}{% endif %}{% if page.meta %} &bull; {{ page.meta }}{% endif %}</p>
     </header>
