@@ -4,6 +4,7 @@ comments: true
 title:  "Turing Test Pitfall"
 date: 2023-02-23
 mathjax: false
+excerpt: ""
 ---
 
 In recent discussions, both with people who work on AI and others who have cursory interest, the topic of intelligence has come up. Sometimes the person I'm speaking with will assert that a language model that passes the Turing Test is indeed intelligent. I think this is a misguided way of thinking about both the Turing Test and intelligence.
