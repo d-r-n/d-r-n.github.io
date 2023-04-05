@@ -13,7 +13,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #F5F5F5;
+  background-color: #222831;
   z-index: 1000;
   padding: 0.3rem;
   width: 100%;
@@ -32,8 +32,8 @@ body {
 .section-anchor::before {
   content: "";
   display: block;
-  height: 60px; /* height of the fixed header */
-  margin-top: -60px; /* negative value of the height of fixed header */
+  height: 60px;
+  margin-top: -60px;
 }
 
 /* Add media query to hide header on mobile devices */
@@ -74,6 +74,10 @@ section {
   left: 10px;
 }
 
+h3 {
+  color: #222831; /* Change color of section titles */
+}
+
 img.center {
     display: block;
     margin: 0 auto;
@@ -108,9 +112,10 @@ img.center {
 
 .fa:hover {
   opacity: 0.7;
-  transform: scale(1.2);
-}
+  transform: scale(1.1);
+  color: #222831; /* Change the hover color of the social media icons */
 
+}
 
 .fa-github {
   background: #707070;
@@ -153,7 +158,7 @@ a:hover span {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 16px;
-  color: #2196F3;
+  color: #EEEEEE; /* Changed the color of the navigation links */
   display: inline-block;
 }
 
