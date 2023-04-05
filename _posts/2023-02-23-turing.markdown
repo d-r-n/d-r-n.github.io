@@ -2,6 +2,7 @@
 layout: post
 comments: true
 title:  "Turing Test Pitfall"
+excerpt: false
 date: 2023-02-23
 mathjax: false
 ---
