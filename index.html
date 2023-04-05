@@ -27,10 +27,28 @@ body {
   margin: 0 auto;
 }
 
+.navigation {
+  display: none;
+}
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 16px;}
+.navigation a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #2196F3;
+  display: inline-block;
+}
+
+@media screen and (max-width: 576px) {
+  .navigation {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .logo {
+    display: none;
+  }
 }
 
 .smalltxt{
@@ -219,7 +237,7 @@ a:hover span {
 
 <body>
   <div class="header">
-    <a href="https://dylannikol.com/"><img src="/d-r-n.github.io/assets/8bitproilepic.jpg" height="32"></a>
+    <a href="https://dylannikol.com/"><img src="/d-r-n.github.io/assets/8bitproilepic.jpg" height="32" class="logo"></a>
     <div class="navigation">
       <a href="#bio">Bio</a>
       <a href="#projects">Projects</a>
