@@ -3,278 +3,11 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {
-  font-family: "Lato", sans-serif;
-}
-
-.header {
-  display: flex;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #222831;
-  z-index: 1000;
-  padding: 0.3rem;
-  width: 100%;
-}
-
-
-.subscribe-text {
-  color: white;
-  font-size: .7rem;
-}
-
-.header-right{
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  right: 1rem;
-  top: 0;
-  bottom: 0;
-  padding-bottom: 10px;
-}
-
-.email-form {
-  display: flex;
-}
-
-input[type="email"] {
-  padding: 4px 12px;
-  font-size: 12px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  width: 100%;
-  max-width: 200px; /* Decrease the width for better fitting within the header */
-}
-
-button[type="submit"] {
-  margin-left: 2px;
-  padding: 4px 12px;
-  font-size: 12px;
-  background-color: #00ADB5;
-  color: #ffffff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-button[type="submit"]:hover {
-  background-color: #008B93;
-  opacity: 0.8;
-}
-
-.main {
-  margin-left: 120px;
-  font-size: 16px;
-  padding: 0px 10px;
-  padding-top: 60px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-/* New CSS block: Add padding before the sections */
-.section-anchor::before {
-  content: "";
-  display: block;
-  height: 60px;
-  margin-top: -60px;
-}
-
-/* Add media query to hide header on mobile devices */
-@media screen and (max-width: 576px) {
-  .header {
-    display: none;
-  }
-  /* Adjust padding-top of main content for header removal */
-  .main {
-    padding-top: 10px;
-  }
-}
-
-.smalltxt{
-    font-weight:normal;
-    font-size: 12px;
-}
-
-.smalltxt14{
-    font-weight:normal;
-    font-size: 14px;
-}
-
-section {
-  margin-bottom: 3rem;
-}
-
-.header img {
-  float: left;
-  width: 2rem;
-  height: 2rem;
-  background: #555;
-}
-
-.header h1 {
-  position: relative;
-  top: 18px;
-  left: 10px;
-}
-
-
-img.center {
-    display: block;
-    margin: 0 auto;
-}
-
-.imgbox {
-    display: grid;
-    height: 50%;
-}
-
-.center-fit {
-  display: block;
-  max-width: 50%;
-  max-height: 50;
-  margin: 0 auto;
-  margin-bottom: 30px;
-}
-
-.fa {
-  padding: 10px;
-  font-size: 10px;
-  width: 15px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-}
-
-
-.fa {
-  transition: transform 0.3s;
-}
-
-.fa:hover {
-  opacity: 0.7;
-  transform: scale(1.1);
-}
-
-.fa-github {
-  background: #707070;
-  color: white;
-}
-
-.fa-twitter {
-  background: #707070;
-  color: white;
-}
-
-.fa-linkedin {
-  background: #707070;
-  color: white;
-}
-
-.tab {
-    display: inline-block;
-    margin-left: 80px;
-}
-
-a {
-  position: relative
-}
-
-a span {
-  display: none;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 8px;
-  background: rgba(255,255,255,.8);
-}
-
-a:hover span {
-  display: block
-}
-
-.navigation a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 16px;
-  color: #EEEEEE; /* Changed the color of the navigation links */
-  display: inline-block;
-}
-
-@media screen and (max-width: 576px) {
-  .navigation {
-    display: none;
-  }
-  .header {
-    justify-content: center;
-  }
-  .sidenav {
-    display: block;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .main {
-    padding: 20px 10px;
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .center-fit {
-    width: 100%;
-    height: auto;
-  }
-}
-
-.scroll-padding {
-  scroll-padding-top: 70px; /* height of the header */
-}
-
-.fa {
-  display: inline-block;
-  margin: 0 5px;
-}
-
-.email-row {
-  display: none;
-  text-align: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-
-@media screen and (max-width: 576px) {
-  .fa {
-    font-size: 1rem;
-    width: 1rem;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .header-right {
-    /* Add this line to hide form on mobile */
-    display: none;
-  }
-
-  .email-row {
-    display: block;
-
-  }
-}
-
+/* Minified CSS - comments and unnecessary white spaces removed */
+body{font-family:"Lato",sans-serif}.header{display:flex;align-items:center;position:fixed;top:0;left:0;background-color:#222831;z-index:1000;padding:.3rem;width:100%}.subscribe-text{color:#fff;font-size:.7rem}.header-right{display:flex;flex-direction:column;position:absolute;right:1rem;top:0;bottom:0;padding-bottom:10px}.email-form{display:flex}input[type=email]{padding:4px 12px;font-size:12px;border-radius:4px;border:1px solid #ccc;width:100%;max-width:200px}button[type=submit]{margin-left:2px;padding:4px 12px;font-size:12px;background-color:#00ADB5;color:#fff;border:none;border-radius:4px;cursor:pointer}button[type=submit]:hover{background-color:#008B93;opacity:.8}.main{margin-left:120px;font-size:16px;padding:0 10px;padding-top:60px;max-width:1000px;margin:0 auto}.section-anchor::before{content:"";display:block;height:60px;margin-top:-60px}@media screen and (max-width:576px){.header{display:none}.main{padding-top:10px}}.smalltxt{font-weight:400;font-size:12px}.smalltxt14{font-weight:400;font-size:14px}section{margin-bottom:3rem}.header img{float:left;width:2rem;height:2rem;background:#555}.header h1{position:relative;top:18px;left:10px}img.center{display:block;margin:0 auto}.imgbox{display:grid;height:50%}.center-fit{display:block;max-width:50%;max-height:50;margin:0 auto;margin-bottom:30px}.fa{padding:10px;font-size:10px;width:15px;text-align:center;text-decoration:none;border-radius:50%}.fa{transition:transform .3s}.fa:hover{opacity:.7;transform:scale(1.1)}.fa-github,.fa-twitter,.fa-linkedin{background:#707070;color:#fff}.tab{display:inline-block;margin-left:80px}a{position:relative}a span{display:none;position:absolute;bottom:0;width:100%;padding:8px;background:rgba(255,255,255,.8)}a:hover span{display:block}.navigation a{padding:6px 8px 6px 16px;text-decoration:none;font-size:16px;color:#EEE;display:inline-block}@media screen and (max-width:576px){.navigation{display:none}.header{justify-content:center}.sidenav{display:block}}@media screen and (max-width:576px){.main{padding:20px 10px;font-size:14px}}@media screen and (max-width:576px){.center-fit{width:100%;height:auto}}.scroll-padding{scroll-padding-top:70px}.fa{display:inline-block;margin:0 5px}.email-row{text-align:center;padding-top:1rem;padding-bottom:1rem}@media screen and (max-width:576px){.header-right{display:none}.email-row{display:block}}@media screen and (max-width:576px){.fa{font-size:1rem;width:1rem}}
 </style>
-</head>
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" as="style" onload="this.rel='stylesheet'">
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag('js', new Date());
-
-  gtag('config', 'G-Y3YZC398YT');
-
   function scrollToSection(elementId, padding) {
     const element = document.getElementById(elementId);
     const yOffset = -padding;
@@ -282,42 +15,42 @@ a:hover span {
     window.scrollTo({ top: y, behavior: 'smooth' });
   }
 
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      const targetId = this.getAttribute('href').slice(1);
-      scrollToSection(targetId, 70); // 70px padding to account for header height
+  document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').slice(1);
+        scrollToSection(targetId, 70); // 70px padding to account for header height
+      });
     });
   });
 </script>
-
 <link rel="shortcut icon" type="image/x-icon" href="/d-r-n.github.io/assets/favicon.ico">
-
+</head>
 <body>
+  <img src="/d-r-n.github.io/assets/8bitproilepic.jpg" height="32" loading="lazy">
   <div class="header">
-  <a href="https://dylannikol.com/"><img src="/d-r-n.github.io/assets/8bitproilepic.jpg" height="32"></a>
-  <div class="navigation">
-    <a href="#bio">Bio</a>
-    <a href="#blog">Blog</a>
-    <a href="#projects">Projects</a>
-    <a href="#work">Work</a>
-    <a href="#photos">Photos</a>
+    <a href="https://dylannikol.com/"><img src="/d-r-n.github.io/assets/8bitproilepic.jpg" height="32" loading="lazy"></a>
+    <div class="navigation">
+      <a href="#bio">Bio</a>
+      <a href="#blog">Blog</a>
+      <a href="#projects">Projects</a>
+      <a href="#work">Work</a>
+      <a href="#photos">Photos</a>
+    </div>
+  
+    <div class="header-right">
+       <div class="subscribe-text">Subscribe to my email list</div>
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSdNVKtc3QboZtEPyTrJYq5u260ESmjcrxpIKPuI-Hfl95Z5ng/formResponse" method="post" target="_blank" class="email-form">
+      <input type="email" name="entry.1797456602" id="email" placeholder="Enter your email" required>
+      <button type="submit">Submit</button>
+    </form>
+    </div>
   </div>
-  <div class="header-right">
-     <!-- Move the form into the header -->
-     <div class="subscribe-text">Subscribe to my email list</div>
-  <form action="https://docs.google.com/forms/d/e/1FAIpQLSdNVKtc3QboZtEPyTrJYq5u260ESmjcrxpIKPuI-Hfl95Z5ng/formResponse" method="post" target="_blank" class="email-form">
-    <input type="email" name="entry.1797456602" id="email" placeholder="Enter your email" required>
-    <button type="submit">Submit</button>
-  </form>
-
-  </div>
- 
-</div>
   <div class="main">
-    <p style="text-align: center;"><img class="center" src="/d-r-n.github.io/assets/round_profile_pic.png" height="200"></p>
+    <p style="text-align: center;"><img class="center" src="/d-r-n.github.io/assets/round_profile_pic.png" loading="lazy" height="200"></p>
     <h1 align="center">Dylan Nikol</h1>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="none" onload="if(media!='all')media='all'">
     <div style="text-align:center">
       <a href="https://twitter.com/dylanrnikol" class="fa fa-twitter"></a>
       <a href="https://www.linkedin.com/in/dylan-nikol" class="fa fa-linkedin"></a>
@@ -340,23 +73,21 @@ a:hover span {
     <section id="blog" class="section-anchor">
         <h3>Blog</h3>
         <ul>
-            <a href="https://dylannikol.com/2023/02/23/turing.html">Turing Test Pitfall</a>
-            <br>
-            <a href="https://dylannikol.com/2023/02/05/preference-algorithms.html">Preference Algorithms</a>
+          <a href="https://dylannikol.com/2023/02/23/turing.html">Turing Test Pitfall</a>
+          <br>
+          <a href="https://dylannikol.com/2023/02/05/preference-algorithms.html">Preference Algorithms</a>
         </ul>
     </section>
     <section id="projects" class="section-anchor">
         <h3>Projects</h3>
         <ul>
             <p>prescene.ai [coming soon] - AI tools to revolutionize the film development process</p>
-            <img class="center-fit" src="/d-r-n.github.io/assets/prescene_home.png"/>
+            <img class="center-fit" src="/d-r-n.github.io/assets/prescene_home.png" loading="lazy"/>
             <p>A focus detection tool for zoom calls. Gently notifications if you look away from the camera.</p>
-            <video class="center-fit" width="640" height="360" controls autoplay loop muted><source src="/d-r-n.github.io/assets/A_eye_demo.mp4" type="video/mp4">
+            <video class="center-fit" width="640" height="360" controls autoplay loop muted><source src="/d-r-n.github.io/assets/A_eye_demo.mp4" type="video/mp4" loading="lazy">
             </video>
             <p>2021 NFL Data Bowl: Predicting NFL Pass Completion (<a href="https://dylanrnikol.medium.com/predicting-nfl-pass-completion-35c2fa487094">Medium Article</a>)</p>
             <p><a href="https://www.youtube.com/watch?v=QOSBj1UQgY4" >15 year old me with a camera</a></p>
-
-
         </ul>
     </section>
     <section id="work" class="section-anchor">
@@ -382,19 +113,17 @@ a:hover span {
     </section>
     <section id="photos" class="section-anchor">
         <h3>Photos</h3>
-        <a style="display: block;"><img class="center-fit" src="/d-r-n.github.io/assets/queenstown.jpg"/><span class="smalltxt" style="text-align:center">Lake Wakatipu, Queenstown, NZ</span></a>
-        <a style="display: block;"><img class="center-fit" src="/d-r-n.github.io/assets/mtcook.jpg"/><span class="smalltxt" style="text-align:center">Mount Cook National Park, NZ</span></a>
-        <a style="display: block;"><img class="center-fit" src="/d-r-n.github.io/assets/dubaidesert.jpg"/><span class="smalltxt" style="text-align:center">Dubai, UAE</span></a>
-        <a style="display: block;"><img class="center-fit" src="/d-r-n.github.io/assets/glacier.jpg"/><span class="smalltxt" style="text-align:center">Glacier National Park, MT</span></a>
-        <a style="display: block;"><img class="center-fit" src="/d-r-n.github.io/assets/singapore.jpg"/><span class="smalltxt" style="text-align:center">Gardens by the Bay, SGP</span></a>
-        <a style="display: block;"><img class="center-fit" src="/d-r-n.github.io/assets/ranch_stars.jpg"/><span class="smalltxt" style="text-align:center">Richards, TX</span></a>
-        <a style="display: block;"><img class="center-fit" src="/d-r-n.github.io/assets/ranch_stars2.jpg"/><span class="smalltxt" style="text-align:center">Richards, TX</span></a>
-        <a style="display: block;"><img class="center-fit" src="/d-r-n.github.io/assets/deck_lightning.jpg"/><span class="smalltxt" style="text-align:center">Austin, TX</span></a>
-        <a style="            display: block;"><img class="center-fit" src="/d-r-n.github.io/assets/fort_cochin.jpg"/><span class="smalltxt" style="text-align:center">Cochin, Kerala, India</span></a>
-        <a style="display: block;"><img class="center-fit" src="/d-r-n.github.io/assets/tekapo.jpg"/><span class="smalltxt" style="text-align:center">Lake Tekapo, NZ</span></a>
-    </section>
-        <footer>
-        </footer>
-    </div>
+        <a style="display: block;"><img class="center-fit" src="/d-r-n.github.io/assets/queenstown.jpg" loading="lazy"/><span class="smalltxt" style="text-align:center">Lake Wakatipu, Queenstown, NZ</span></a>
+        <a style="display: block;"><img class="center-fit" src="/d-r-n.github.io/assets/mtcook.jpg" loading="lazy"/><span class="smalltxt" style="text-align:center">Mount Cook National Park, NZ</span></a>
+        <a style="display: block;"><img class="center-fit" src="/d-r-n.github.io/assets/dubaidesert.jpg" loading="lazy"/><span class="smalltxt" style="text-align:center">Dubai, UAE</span></a>
+        <a style="display: block;"><img class="center-fit" src="/d-r-n.github.io/assets/glacier.jpg" loading="lazy"/><span class="smalltxt" style="text-align:center">Glacier National Park, MT</span></a>
+        <a style="display: block;"><img class="center-fit" src="/d-r-n.github.io/assets/singapore.jpg" loading="lazy"/><span class="smalltxt" style="text-align:center">Gardens by the Bay, SGP</span></a>
+        <a style="display: block;"><img class="center-fit" src="/d-r-n.github.io/assets/ranch_stars.jpg" loading="lazy"/><span class="smalltxt" style="text-align:center">Richards, TX</span></a>
+        <a style="display: block;"><img class="center-fit" src="/d-r-n.github.io/assets/ranch_stars2.jpg" loading="lazy"/><span class="smalltxt" style="text-align:center">Richards, TX</span></a>
+        <a style="display: block;"><img class="center-fit" src="/d-r-n.github.io/assets/deck_lightning.jpg" loading="lazy"/><span class="smalltxt" style="text-align:center">Austin, TX</span></a>
+        <a style="display: block;"><img class="center-fit" src="/d-r-n.github.io/assets/fort_cochin.jpg" loading="lazy"/><span class="smalltxt" style="text-align:center">Cochin, Kerala, India</span></a>
+        <a style="display: block;"><img class="center-fit" src="/d-r-n.github.io/assets/tekapo.jpg" loading="lazy"/><span class="smalltxt    " style="text-align:center">Lake Tekapo, NZ</span></a>
+      </section>
+  </div>
 </body>
 </html>
