@@ -3,32 +3,71 @@ layout: default
 ---
 
 <style>
-.myCoolDiv{
+.post {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.post-content-container {
+  max-width: 800px;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+  text-align: center;
+}
+
+.post-header h2 {
+  margin-bottom: 0.5rem;
+}
+
+.meta {
+  color: #666;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.post-content {
+  line-height: 1.6;
+}
+
+@media (max-width: 767px) {
+  .post-content-container {
+    margin: 1rem;
+    max-width: 100%;
+  }
+}
+
+{% if page.mathjax %}
+.myCoolDiv {
   margin-left: 40px;
   margin-right: 600px;
   width: 40%;
   height: 50%;
   min-width: 600px;
- }
-
+}
+{% endif %}
 </style>
-<div class="post">
-  <div class="myCoolDiv" >
-    <header class="post-header">
-      
-    <hr>
-    <h2>{{ page.title }}</h1>
-    <hr>
 
-    <p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+<div class="post">
+  <div class="post-content-container">
+    <header class="post-header">
+      <hr>
+      <h2>{{ page.title }}</h2>
+      <hr>
+      <p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} &bull; {{ page.author }}{% endif %}{% if page.meta %} &bull; {{ page.meta }}{% endif %}</p>
     </header>
 
     <article class="post-content">
-        {{ content }}
+      {{ content }}
     </article>
 
-    <!-- mathjax -->
     {% if page.mathjax %}
+    <!-- mathjax -->
     <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     {% endif %}
   </div>
