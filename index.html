@@ -19,7 +19,7 @@
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const targetId = this.getAttribute('href').slice(1);
-        scrollToSection(targetId, 70); // 70px padding to account for header height
+        scrollToSection(targetId, 0); // 0px padding to account for header height
       });
     });
   });
