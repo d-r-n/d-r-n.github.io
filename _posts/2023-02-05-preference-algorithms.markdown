@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title:  "Active Control Ranking Algorithms"
+title:  "Active-Control Preference Algorithms"
 excerpt: "A path forward for content platforms in an age of increased public scrutiny, legislative pressure, and generative AI"
 date:   2023-02-05
 mathjax: false
