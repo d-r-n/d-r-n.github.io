@@ -21,7 +21,7 @@ While this personalization may seem like a benefit at a glance, it comes at a co
 
 ### Amplification of Negative Effects and Algorithmic Solutions
 
-The ad revenue model's pressure on social media platforms, coupled with the use of passive algorithms, to keep users engaged can exacerbate mental health issues, especially among younger users. Studies show that prolonged use of social media can lead to feelings of anxiety<sup>1</sup>, depression<sup>2</sup>, self-doubt<sup>3</sup>, as users compare themselves to the structured, idealized narratives presented by influencers and ads.
+The ad revenue model's pressure on social media platforms, coupled with the use of passive algorithms, to keep users engaged can exacerbate mental health issues, especially among younger users. Studies show that prolonged use of social media can lead to feelings of anxiety<sup>1</sup>, depression<sup>2</sup>, and self-doubt<sup>3</sup>, as users compare themselves to the structured, idealized narratives presented by influencers and ads.
 
 Moreover, these issues extend beyond individuals and can impact society as a whole. Platforms, in their quest for engagement, often prioritize divisive and attention-grabbing content over factual reporting, contributing to the spread of misinformation and polarizing echo chambers. Consequently, civil discourse and critical thinking can be negatively affected, leading to a fractured and increasingly polarized society.
 
