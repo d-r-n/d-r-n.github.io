@@ -15,13 +15,13 @@ In this essay, we take a closer look at the intricate web of incentives spun by 
 
 ### Drawing in Users: The Power of Personalization and Passive Algorithms
 
-The ad revenue model's lifeblood is targeted advertising, which relies heavily on user data collection. Companies process this data to create personalized experiences, serving users tailored content to increase engagement. On social media platforms, sophisticated passive algorithms work tirelessly to deliver content that aligns with users' preferences, curating a feed based on their past behavior, interests, and interactions.
+The ad revenue model's lifeblood is targeted advertising, which relies heavily on user data collection. Companies process this data to create personalized experiences, serving users tailored content to increase engagement. On social media platforms, sophisticated passive algorithms (passive meaning trained via implicit signals, e.g., user engagement) work tirelessly to deliver content that aligns with users' preferences, curating a feed based on their past behavior, interests, and interactions.
 
 While this personalization may seem like a benefit at a glance, it comes at a cost. As social media platforms draw more users into their spaces by feeding them precisely what they want to see, their time spent on these platforms skyrockets. Some could argue that the constant supply of dopamine-inducing content is addictive, fostering dependent behavior and creating an environment where users have difficulty separating their online lives from their offline ones.
 
 ### Amplification of Negative Effects and Algorithmic Solutions
 
-The ad revenue model's pressure on social media platforms, coupled with the use of passive algorithms, to keep users engaged can exacerbate mental health issues, especially among younger users. Studies show that prolonged use of social media can lead to feelings of anxiety, depression, and self-doubt, as users compare themselves to the structured, idealized narratives presented by influencers and ads.
+The ad revenue model's pressure on social media platforms, coupled with the use of passive algorithms, to keep users engaged can exacerbate mental health issues, especially among younger users. Studies show that prolonged use of social media can lead to feelings of anxiety<sup>1</sup>, depression<sup>2</sup>, self-doubt<sup>3</sup>, as users compare themselves to the structured, idealized narratives presented by influencers and ads.
 
 Moreover, these issues extend beyond individuals and can impact society as a whole. Platforms, in their quest for engagement, often prioritize divisive and attention-grabbing content over factual reporting, contributing to the spread of misinformation and polarizing echo chambers. Consequently, civil discourse and critical thinking can be negatively affected, leading to a fractured and increasingly polarized society.
 
@@ -40,3 +40,7 @@ Ultimately, to achieve a healthier digital ecosystem, stakeholders in the tech i
 Continuing the conversation amongst these stakeholders, researchers, and users may lead to the development and implementation of innovative solutions for mitigating the negative consequences of the ad revenue model. Furthermore, these discussions may spawn new strategies and ideas to protect users' well-being and reshape our digital environment positively.
 
 As society becomes more intertwined with the digital landscape, it is crucial to recognize and address the consequences that economic models, like the ad-revenue system, impose on our lives. By critically questioning the state of our current digital ecosystems and seeking user-centric alternatives, we can pave the way for a healthier, safer, and more genuine online experience for everyone.
+
+<sup>1</sup><a>https://guilfordjournals.com/doi/10.1521/jscp.2018.37.10.751<a>
+<sup>2</sup>https://www.frontiersin.org/articles/10.3389/fpsyt.2018.00686/full
+<sup>3</sup>https://www.psychologytoday.com/us/blog/social-instincts/201911/new-analysis-social-media-use-is-harmful-self-esteem
