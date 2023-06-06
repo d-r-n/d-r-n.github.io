@@ -41,6 +41,6 @@ Continuing the conversation amongst these stakeholders, researchers, and users m
 
 As society becomes more intertwined with the digital landscape, it is crucial to recognize and address the consequences that economic models, like the ad-revenue system, impose on our lives. By critically questioning the state of our current digital ecosystems and seeking user-centric alternatives, we can pave the way for a healthier, safer, and more genuine online experience for everyone.
 
-<sup>1</sup><a>https://guilfordjournals.com/doi/10.1521/jscp.2018.37.10.751<a>
-<sup>2</sup>https://www.frontiersin.org/articles/10.3389/fpsyt.2018.00686/full
-<sup>3</sup>https://www.psychologytoday.com/us/blog/social-instincts/201911/new-analysis-social-media-use-is-harmful-self-esteem
+<sup>1</sup><a href="https://guilfordjournals.com/doi/10.1521/jscp.2018.37.10.751" >https://guilfordjournals.com/doi/10.1521/jscp.2018.37.10.751</a>
+<sup>2</sup><a href="https://www.frontiersin.org/articles/10.3389/fpsyt.2018.00686/full" >https://www.frontiersin.org/articles/10.3389/fpsyt.2018.00686/full</a>
+<sup>3</sup><a href="https://www.psychologytoday.com/us/blog/social-instincts/201911/new-analysis-social-media-use-is-harmful-self-esteem" >https://www.psychologytoday.com/us/blog/social-instincts/201911/new-analysis-social-media-use-is-harmful-self-esteem</a>
