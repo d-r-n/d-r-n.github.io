@@ -7,9 +7,7 @@ date:   2023-08-09
 mathjax: false
 ---
 
-Four weeks ago, Alex, Samir, and I made the best decision of our lives. We decided to start a company together.
-
-This was a decision fueled by a shared passion, a vision that ignited our hearts, and a desire to create something truly impactful. Today, as I sit down to write this update, I can't help but reflect on the whirlwind of experiences and emotions that have shaped these initial weeks.
+Four weeks ago, Alex, Samir, and I made the best decision of our lives; we decided to start a company together. This was a decision fueled by a shared passion, a vision that ignited our hearts, and a desire to create something truly impactful. Today, as I sit down to write this update, I can't help but reflect on the whirlwind of experiences and emotions that have shaped these initial weeks.
 
 Let's back up.
 
