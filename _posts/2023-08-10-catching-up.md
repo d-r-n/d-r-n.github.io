@@ -27,9 +27,7 @@ In January, I had a chat with a friend who works in Hollywood. He shared how tim
 
 Without hesitation, we quit our jobs and committed to solving people's problems.
 
-It’s now February, and we’re looking for ways to accelerate our growth. Enter Buildspace.
-
-I hopped on a plane to San Francisco and showed up at the Buildspace school for an IRL event. That’s where I met Alex.
+By February, we were looking for ways to accelerate our growth. Enter Buildspace. We joined Nights & Weekends s3 on a whim, and a few months later, I was on a plane to San Francisco. That’s where I met Alex.
 
 Alex and I instantly clicked. It was the feeling when you meet someone and you just know that they're on the same wavelength. Alex was a pure-bred entrepreneur who dreams big. The moment we started talking, it was clear that his mind was wired for innovation and his heart was set on creating something extraordinary.
 
@@ -60,11 +58,11 @@ Meanwhile, Samir and I are putting in hard work from our makeshift home office.
 We have never been this excited in our lives.
 <hr>
 #### Goals and Milestones Ahead
-✅  Make $1 (by August) (beat by \$49,999\)<br>
-✅  Get a customer (by August)<br>
+✅ Make $1 (by August) (beat by \$49,999\)<br>
+✅ Get a customer (by August)<br>
 🔲 1k MRR (by September)<br>
 🔲 3 customers (by September)<br>
-🔲 10k MRR (by October)<br>
+🔲 5k MRR (by October)<br>
 
 <img src="/d-r-n.github.io/assets/office.png"
      alt="the prismatic office"
