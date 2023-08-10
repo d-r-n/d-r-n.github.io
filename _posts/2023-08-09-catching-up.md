@@ -60,3 +60,10 @@ Now, we're refining our V1 and in discussions with new customers for potential d
 Meanwhile, Samir and I are putting in hard work from the makeshift home office.
 
 I speak for all of us when I say we have never been this excited in our lives.
+<hr>
+#### Goals and Milestones Ahead
+:white_check_mark: Make $1 (by August) (beat by \$49,999\)
+:white_check_mark: Get a customer (by August)
+:black_square_button: 1k MRR (by September)
+:black_square_button: 3 customers (by September)
+:black_square_button: 10k MRR (by October)
