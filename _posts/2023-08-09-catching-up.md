@@ -19,7 +19,7 @@ After graduation, life took us in different directions.
 
 Samir joined a bank as a software engineer, I ventured as a data scientist. The itch went unscratched.
 
-For the next year and a half, we saw firsthand the friction that exists within companies when it comes to information flow. Leaders had questions, teams had answers, but the process to bridge that gap could take anywhere from minutes to weeks. It was draining.
+For the next year and a half, we saw firsthand the friction that exists within companies when it comes to information flow. Leaders had questions, teams had answers, but the process to bridge that gap could take anywhere from minutes to months. It was draining.
 
 In January, I had a chat with a friend who works in Hollywood. He shared how time consuming it is to read through stacks of movie scripts. I couldn't help but build a solution. I called up Samir, and we built [Prescene.ai](https://prescene.ai). When we launched Prescene, something clicked.
 
@@ -35,21 +35,18 @@ Alex and I instantly clicked. It was the feeling when you meet someone and you j
 
 Funnily enough, it didn't occur to either of us to start working together - we just naturally began helping each other on our products.
 
-All of sudden, Samir, Alex, and I found ourselves in nightly brainstorming sessions. But something was still missing. Each of us had pride in what we built individually, but we had a shared hunger for more. We wanted to tackle bigger problems, help broader audiences, and leave a mark on a larger canvas. Amidst this realization, two common threads surfaced:
+All of sudden, Samir, Alex, and I found ourselves in nightly brainstorming sessions. But something was still missing. Each of us had pride in what we built individually, but we had a shared hunger for more. We wanted to tackle bigger problems, help broader audiences, and leave a mark on a larger canvas. Amidst this realization, a common thread surfaced - 
 
-1. We each intimately understood the pain from inefficient information flow within companies.
-2. We understood we were in a unique position to do something about it-we all had experienced this problem, but from different angles. Alex as a CTO guiding data teams and making decisions for the company, Samir as an engineer building information pipelines, and me as a data scientist building an auto-insight engine for executives.
+We each intimately understood the pain of inefficient information flow within companies, but from different perspectives. Alex as a CTO guiding data teams and making decisions for the company, Samir as an engineer building information pipelines, and me as a data scientist building an auto-insight engine for executives. This gave us an unfair advantage to solve this problem.
 
-This is how Prismatic was born.
-
-#### The problem we see:
+#### The problem
 
 Companies waste billions every year trying to figure out what the hell is going on inside their businesses. ~90% of the time, the data is at their fingertips; the hurdle is retrieval and analysis. Phrases like "Let me check with my team" or "I'll provide that figure by the day's end" are commonplace. Data teams are stretched thin, resources are constrained, and outcomes delayed - everyone knows this. So what do companies do? Usually 1 of 3 things:
 1. Divert internal resources (data engineers + scientists) to conduct ad-hoc analyses.
 2. Hire fancy analytics consultants to build million-dollar dashboards (which often are too rigid to be used practically).
 3. Nothing.
 
-#### How we're solving this:
+#### How we are solving it
 
 We look at all internal data - databases, files, communication channels - to understand the business. This enables executives to use natural language to build dashboards on the fly, and answer hard questions - ones that used to take days-in seconds.
 
@@ -59,7 +56,7 @@ Now, we're refining our V1 and in discussions with new customers for potential d
 
 Meanwhile, Samir and I are putting in hard work from the makeshift home office.
 
-I speak for all of us when I say we have never been this excited in our lives.
+We have never been this excited in our lives.
 <hr>
 #### Goals and Milestones Ahead
 :white_check_mark: Make $1 (by August) (beat by \$49,999\)
@@ -67,3 +64,7 @@ I speak for all of us when I say we have never been this excited in our lives.
 :black_square_button: 1k MRR (by September)
 :black_square_button: 3 customers (by September)
 :black_square_button: 10k MRR (by October)
+
+<img src="../assets/office.png"
+     alt="the prismatic office"
+     style="float: left; margin-right: 10px;" />
