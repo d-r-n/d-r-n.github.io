@@ -42,14 +42,14 @@ All of sudden, Samir, Alex, and I found ourselves in nightly brainstorming sessi
 
 This is how Prismatic was born.
 
-##### The problem we see:
+#### The problem we see:
 
 Companies waste billions every year trying to figure out what the hell is going on inside their businesses. ~90% of the time, the data is at their fingertips; the hurdle is retrieval and analysis. Phrases like "Let me check with my team" or "I'll provide that figure by the day's end" are commonplace. Data teams are stretched thin, resources are constrained, and outcomes delayed - everyone knows this. So what do companies do? Usually 1 of 3 things:
 1. Divert internal resources (data engineers + scientists) to conduct ad-hoc analyses.
 2. Hire fancy analytics consultants to build million-dollar dashboards (which often are too rigid to be used practically).
 3. Nothing.
 
-##### How we're solving this:
+#### How we're solving this:
 
 We look at all internal data - databases, files, communication channels - to understand the business. This enables executives to use natural language to build dashboards on the fly, and answer hard questions - ones that used to take days-in seconds.
 
