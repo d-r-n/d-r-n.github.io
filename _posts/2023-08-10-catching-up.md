@@ -61,7 +61,7 @@ We have never been this excited in our lives.
 ✅ Make $1 (by August) (beat by \$49,999\)<br>
 ✅ Get a customer (by August)<br>
 🔲 1k MRR (by September)<br>
-🔲 3 customers (by September)<br>
+🔲 3 customers (by September)<br> 
 🔲 5k MRR (by October)<br>
 
 <img src="/d-r-n.github.io/assets/office.png"
