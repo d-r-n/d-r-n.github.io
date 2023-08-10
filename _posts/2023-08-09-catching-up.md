@@ -59,12 +59,15 @@ Meanwhile, Samir and I are putting in hard work from the makeshift home office.
 We have never been this excited in our lives.
 <hr>
 #### Goals and Milestones Ahead
-✅  Make $1 (by August) (beat by \$49,999\)
-✅  Get a customer (by August)
-🔲 1k MRR (by September)
-🔲 3 customers (by September)
-🔲 10k MRR (by October)
+✅  Make $1 (by August) (beat by \$49,999\)<br>
+✅  Get a customer (by August)<br>
+🔲 1k MRR (by September)<br>
+🔲 3 customers (by September)<br>
+🔲 10k MRR (by October)<br>
 
-<img src="../assets/office.webp"
+<img src="/d-r-n.github.io/assets/office.webp"
      alt="the prismatic office"
      style="float: left; margin-right: 10px;" />
+
+
+![prismatic office](/d-r-n.github.io/assets/office.webp)
