@@ -65,6 +65,6 @@ We have never been this excited in our lives.
 🔲 3 customers (by September)
 🔲 10k MRR (by October)
 
-<img src="../assets/office.png"
+<img src="../assets/office.webp"
      alt="the prismatic office"
      style="float: left; margin-right: 10px;" />
