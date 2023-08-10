@@ -21,7 +21,7 @@ Samir joined a bank as a software engineer, I ventured as a data scientist. The 
 
 For the next year and a half, we saw firsthand the friction that exists within companies when it comes to information flow. Leaders had questions, teams had answers, but the process to bridge that gap could take anywhere from minutes to months. It was draining.
 
-In January, I had a chat with a friend who works in Hollywood. He shared how time-consuming it is to read through stacks of movie scripts. I couldn't help but build a solution. I called up Samir, and we built [Prescene.ai](https://prescene.ai). When we launched Prescene, something clicked.
+In January, I had a chat with a friend who works in Hollywood. He shared how time-consuming it is to read through stacks of movie scripts. I couldn't help but build a solution. I called up Samir, and we built [prescene.ai](https://prescene.ai). When we launched Prescene, something clicked.
 
 <b>We could create value for others.</b>
 
