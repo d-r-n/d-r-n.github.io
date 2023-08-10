@@ -59,11 +59,11 @@ Meanwhile, Samir and I are putting in hard work from the makeshift home office.
 We have never been this excited in our lives.
 <hr>
 #### Goals and Milestones Ahead
-:white_check_mark: Make $1 (by August) (beat by \$49,999\)
-:white_check_mark: Get a customer (by August)
-:black_square_button: 1k MRR (by September)
-:black_square_button: 3 customers (by September)
-:black_square_button: 10k MRR (by October)
+✅  Make $1 (by August) (beat by \$49,999\)
+✅  Get a customer (by August)
+🔲 1k MRR (by September)
+🔲 3 customers (by September)
+🔲 10k MRR (by October)
 
 <img src="../assets/office.png"
      alt="the prismatic office"
