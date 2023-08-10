@@ -23,7 +23,7 @@ For the next year and a half, we saw firsthand the friction that exists within c
 
 In January, I had a chat with a friend who works in Hollywood. He shared how time consuming it is to read through stacks of movie scripts. I couldn't help but build a solution. I called up Samir, and we built [Prescene.ai](https://prescene.ai). When we launched Prescene, something clicked.
 
-We can create value for others.
+<b>We can create value for others.</b>
 
 Without hesitation, we quit our jobs, committed to solving peoples' problems. 
 
@@ -38,20 +38,20 @@ Funnily enough, it didn't occur to either of us to start working together - we j
 All of sudden, Samir, Alex, and I found ourselves in nightly brainstorming sessions. But something was still missing. Each of us had pride in what we built individually, but we had a shared hunger for more. We wanted to tackle bigger problems, help broader audiences, and leave a mark on a larger canvas. Amidst this realization, two common threads surfaced:
 
 1. We each intimately understood the pain from inefficient information flow within companies.
-2. We understood we were in a unique position to do something about it--we all had experienced this problem, but from different angles. Alex as a CTO guiding data teams and making decisions for the company, Samir as an engineer building information pipelines, and me as a data scientist building an auto-insight engine for executives.
+2. We understood we were in a unique position to do something about it-we all had experienced this problem, but from different angles. Alex as a CTO guiding data teams and making decisions for the company, Samir as an engineer building information pipelines, and me as a data scientist building an auto-insight engine for executives.
 
 This is how Prismatic was born.
 
-Here's how we broke it down.
+##### The problem we see:
 
 Companies waste billions every year trying to figure out what the hell is going on inside their businesses. ~90% of the time, the data is at their fingertips; the hurdle is retrieval and analysis. Phrases like "Let me check with my team" or "I'll provide that figure by the day's end" are commonplace. Data teams are stretched thin, resources are constrained, and outcomes delayed - everyone knows this. So what do companies do? Usually 1 of 3 things:
 1. Divert internal resources (data engineers + scientists) to conduct ad-hoc analyses.
 2. Hire fancy analytics consultants to build million-dollar dashboards (which often are too rigid to be used practically).
 3. Nothing.
 
-How we're solving this with Prismatic:
+##### How we're solving this:
 
-We look at all internal data - databases, files, communication channels - to understand the business. This enables executives to use natural language to build dashboards on the fly, and answer hard questions--ones that used to take days--in seconds.
+We look at all internal data - databases, files, communication channels - to understand the business. This enables executives to use natural language to build dashboards on the fly, and answer hard questions - ones that used to take days-in seconds.
 
 As three technical founders, we dove into product development right away. However, we recognized right from the start that the "chat with your data" market is highly saturated. What sets us apart is our unique problem-solving approach. We started by building a simple interface that can answer the questions that have the highest friction. In just one week, we demo'd our insight generation engine to prospective clients. It took us four days to secure a design partnership and close a $50k deal.
 
