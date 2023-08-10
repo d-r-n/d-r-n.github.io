@@ -11,7 +11,7 @@ Four weeks ago, Alex, Samir, and I made the best decision of our lives; we decid
 
 Let's rewind.
 
-Samir and I met in 2020 during grad school. Although we came from different backgrounds and focused on different areas, we found ourselves in the same statistical learning course. It wasn't long before we discovered that we shared a deep love for cracking complex problems and a knack for thinking beyond the obvious. And just like that, a friendship was born.
+Samir and I met in 2020 during grad school. Although we came from different backgrounds and focused on different areas, we found ourselves sin the same statistical learning course. It wasn't long before we discovered that we shared a deep love for cracking complex problems and a knack for thinking beyond the obvious. And just like that, a friendship was born.
 
 Late-night chats about the boundless possibilities of machine learning unveiled more. We both felt that entrepreneurial itch - the itch to create, innovate, and push the boundaries of what's possible.
 
@@ -65,9 +65,9 @@ We have never been this excited in our lives.
 🔲 3 customers (by September)<br>
 🔲 10k MRR (by October)<br>
 
-<img src="/d-r-n.github.io/assets/office.webp"
+<img src="/d-r-n.github.io/assets/office.png"
      alt="the prismatic office"
      style="float: left; margin-right: 10px;" />
 
 
-![prismatic office](/d-r-n.github.io/assets/office.webp)
+![prismatic office](/d-r-n.github.io/assets/office.png)
