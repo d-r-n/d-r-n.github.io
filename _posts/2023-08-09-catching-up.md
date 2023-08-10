@@ -67,4 +67,4 @@ We have never been this excited in our lives.
 
 <img src="/d-r-n.github.io/assets/office.png"
      alt="the prismatic office"
-     style="max-width: 80px; width: 100%; height: auto;">
+     style="max-width: 800px; width: 100%; height: auto;">
