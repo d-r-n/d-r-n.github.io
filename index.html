@@ -276,6 +276,54 @@
     .fa-twitter_2:hover {
       opacity: 0.7;
     }
+
+    .container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.timespan {
+    grid-column: span 1;
+    font-size: 14px;
+    text-align: right;
+    padding-right: 5px;
+    color: #bbb;
+}
+
+.ico {
+    grid-column: span 1;
+    vertical-align: top;
+    border-left: 2px solid #cfcfcf;
+    position: relative;
+}
+
+.entry-dot {
+    position: absolute;
+    top: 0px;
+    left: -8px;
+    width: 10px;
+    height: 10px;
+    border-radius: 7px;
+    background-color: #cfcfcf;
+    border: 2px solid white;
+}
+
+.desc {
+    grid-column: span 10;
+    vertical-align: top;
+    font-size: 17px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+
   </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script>
@@ -296,17 +344,18 @@
       });
     });
   </script>
-  <link rel="shortcut icon" type="image/x-icon" href="/d-r-n.github.io/assets/favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
 </head>
 
 <body>
   <div class="header">
-    <a href="https://dylannikol.com/"><img src="/d-r-n.github.io/assets/8bitproilepic.jpg" height="32"
+    <a href="https://dylannikol.com/"><img src="/assets/8bitproilepic.jpg" height="32"
         loading="lazy"></a>
     <div class="navigation">
-      <a href="#bio">bio</a>
+      <!-- <a href="#bio">bio</a> -->
       <a href="#updates">prismatic</a>
       <a href="#blog">blog</a>
+      <a href="#timeline">blog</a>
       <a href="#misc">misc</a>
       <a href="#photos">photos</a>
     </div>
@@ -322,7 +371,7 @@
     </div>
   </div>
   <div class="main">
-    <p style="text-align: center;"><img class="center" src="/d-r-n.github.io/assets/round_profile_pic.webp"
+    <p style="text-align: center;"><img class="center" src="/assets/round_profile_pic.webp"
         loading="lazy" height="200"></p>
     <h1 align="center">Dylan Nikol</h1>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -346,96 +395,146 @@
         <button type="submit">Submit</button>
       </form>
     </div>
-    <section id="bio" class="section-anchor">
+    <section id="updates" class="section-anchor">
+      <h3>prismatic updates</h3>
+      <ul>
+        August 2023 &mdash; <a href="https://dylannikol.com/2023/08/10/catching-up.html">Our journey so far and what's brewing</a>
+        <br>
+      </ul>
+  </section>
+  <section id="blog" class="section-anchor">
+    <h3>blog</h3>
+    <ul>
+      <a href="https://dylannikol.com/2023/06/05/rethink-ad-model.html">Rethinking the Ad Revenue Model for Social
+        Media</a>
+      <br>
+      <a href="https://dylannikol.com/2023/02/23/turing.html">Turing Test Pitfall</a>
+      <br>
+      <a href="https://dylannikol.com/2023/02/05/preference-algorithms.html">Active-Control Preference Algorithms</a>
+    </ul>
+  </section>
+
+    <!-- <section id="bio" class="section-anchor">
       <h3>bio</h3>
       <ul>
         <p>
           A recovering data scientist building product in the wild.
         </p>
       </ul>
+      </section> -->
+    <section id="timeline" class="section-anchor">
+      <h3>timeline</h3>
+      <div id="history" class="container">
+
+        <div class="entry row">
+          <div class="timespan">
+            2023
+          </div>
+          <div class="ico">
+            <div class="entry-dot"></div>
+            <img src="assets/stealth.png" class="center" style="max-width: 48px;">
+          </div>
+          <div class="desc">
+            Co-founder of Prismatic
+            <br><br><br><br>
+          </div>
+        </div>
+
+        <div class="entry row">
+          <div class="timespan">
+            2023
+          </div>
+          <div class="ico">
+            <div class="entry-dot"></div>
+            <img src="assets/prescene_logo.png" class="center" style="max-width: 58px;">
+          </div>
+          <div class="desc">
+            Built <a href="https://prescene.ai/">prescene.ai</a> with <a href="https://www.linkedin.com/in/samir-epili/">Samir Epili</a>
+            <br><br><br><br>
+          </div>
+        </div>
+  
+        <div class="entry row">
+          <div class="timespan">
+            2021 - 2023
+          </div>
+          <div class="ico">
+            <div class="entry-dot"></div>
+            <img src="assets/dell_logo.png" class="center" style="max-width: 48px;">
+          </div>
+          <div class="desc">
+            I was a data scientist in Applied AI Research & Engineering. I built econometric models to measure impact of sales incentives on revenue and machine learning models to forecast global sales compensation.
+            <br><br>
+            I delivered $25M+ in savings, 20k+ hours in automation, and 2 patents in NLP systems.<br><br>
+          </div>
+        </div>
+  
+        <div class="entry row">
+          <div class="timespan">
+            2020 - 2021
+          </div>
+          <div class="ico">
+            <div class="entry-dot"></div>
+            <img src="assets/ut_logo.png" class="center" style="max-width: 48px;">
+          </div>
+          <div class="desc">
+            MSBA at the University of Texas at Austin where I worked with <a href="https://www.mccombs.utexas.edu/faculty-and-research/faculty-directory/sheridan-titman/">Sheridan Titman</a> and <a href="https://www.mccombs.utexas.edu/faculty-and-research/faculty-directory/michael-sury/">Michael Sury</a> on building machine learning models for predicting stock returns and default probabilities.
+          </div>
+        </div>
+  
+        <div class="entry row">
+          <div class="timespan">
+            2016 - 2020
+          </div>
+          <div class="ico">
+            <div class="entry-dot"></div>
+            <img src="assets/ut_logo.png" class="center" style="max-width: 48px;">
+          </div>
+          <div class="desc">
+            BBA at the University of Texas at Austin with a major in finance and minor in management information systems.
+          </div>
+        </div>
+      </div>
+
     </section>
-    <section id="updates" class="section-anchor">
-        <h3>prismatic updates</h3>
-        <ul>
-          August 2023 &mdash; <a href="https://dylannikol.com/2023/08/10/catching-up.html">Our journey so far and what's brewing</a>
-          <br>
-        </ul>
-    </section>
-    <section id="blog" class="section-anchor">
-      <h3>blog</h3>
-      <ul>
-        <a href="https://dylannikol.com/2023/06/05/rethink-ad-model.html">Rethinking the Ad Revenue Model for Social
-          Media</a>
-        <br>
-        <a href="https://dylannikol.com/2023/02/23/turing.html">Turing Test Pitfall</a>
-        <br>
-        <a href="https://dylannikol.com/2023/02/05/preference-algorithms.html">Active-Control Preference Algorithms</a>
-      </ul>
-    </section>
-    <!-- <section id="work" class="section-anchor">
-        <h3>Work</h3>
-        <ul>
-          <strong>prescene.ai - Co-founder [2023-]</strong>
-          <ul>
-            <p class='smalltxt14'>-AI-generated coverage for film professionals
-            </p>
-          </ul>
-          <strong>Dell Technologies - Data Scientist [2020-2023]</strong>
-          <ul>
-            <p class='smalltxt14'>-Delivered $25M+ in savings<br>-20k+ hours in automation<br>-4 patents (NLP, Graphs, RL)</p>
-          </ul>
-          <strong>UT Austin - MSBA Advisory Council [2021-]</strong>
-          <br>
-          <br>
-          <strong>Vatic Technologies - Automation Engineering [2020-]</strong>
-          <br>
-          <br>
-          <strong>Castle Finance - Researcher [2022]<br><br>MSBA - UT Austin [2020-2021]</strong>
-          <br>
-          <br>
-          <strong>BBA - UT Austin [2016-2020]</strong>
-          <br>
-          <br>
-        </ul>
-    </section> -->
     <section id="misc" class="section-anchor">
       <h3>misc</h3>
       <ul>
         <p><a href="https://prescene.ai">prescene.ai</a> &mdash; AI script coverage for movie scripts</p>
-        <img class="center-fit" src="/d-r-n.github.io/assets/prescene_ss.webp" loading="lazy" />
+        <img class="center-fit" src="/assets/prescene_ss.webp" loading="lazy" />
         <p>A focus detection tool for zoom calls. Gently notifications if you look away from the camera.</p>
         <video class="center-fit" width="640" height="360" autoplay loop muted playsinline>
-          <source src="/d-r-n.github.io/assets/A_eye_demo.mp4" type="video/mp4">
+          <source src="/assets/A_eye_demo.mp4" type="video/mp4">
         </video>
         <p>2021 NFL Data Bowl: Predicting NFL Pass Completion (<a
             href="https://dylanrnikol.medium.com/predicting-nfl-pass-completion-35c2fa487094">Article</a>)</p>
-        <img class="center-fit" src="/d-r-n.github.io/assets/nfl.gif" />
+        <img class="center-fit" src="/assets/nfl.gif" />
         <p><a href="https://www.youtube.com/watch?v=QOSBj1UQgY4">a 15yo with a gopro</a></p>
       </ul>
     </section>
     <section id="photos" class="section-anchor">
       <h3>photos</h3>
-      <a style="display: block;"><img class="center-fit" src="/d-r-n.github.io/assets/tetons.webp"
+      <a style="display: block;"><img class="center-fit" src="/assets/tetons.webp"
           loading="lazy" /><span class="smalltxt" style="text-align:center">Lake Jackson, Grand Teton National Park</span></a>
-      <a style="display: block;"><img class="center-fit" src="/d-r-n.github.io/assets/queenstown.webp"
+      <a style="display: block;"><img class="center-fit" src="/assets/queenstown.webp"
           loading="lazy" /><span class="smalltxt" style="text-align:center">Lake Wakatipu, Queenstown, NZ</span></a>
-      <a style="display: block;"><img class="center-fit" src="/d-r-n.github.io/assets/mtcook.webp"
+      <a style="display: block;"><img class="center-fit" src="/assets/mtcook.webp"
           loading="lazy" /><span class="smalltxt" style="text-align:center">Mount Cook National Park, NZ</span></a>
-      <a style="display: block;"><img class="center-fit" src="/d-r-n.github.io/assets/dubaidesert.webp"
+      <a style="display: block;"><img class="center-fit" src="/assets/dubaidesert.webp"
           loading="lazy" /><span class="smalltxt" style="text-align:center">Dubai, UAE</span></a>
-      <a style="display: block;"><img class="center-fit" src="/d-r-n.github.io/assets/glacier.webp"
+      <a style="display: block;"><img class="center-fit" src="/assets/glacier.webp"
           loading="lazy" /><span class="smalltxt" style="text-align:center">Glacier National Park, MT</span></a>
-      <a style="display: block;"><img class="center-fit" src="/d-r-n.github.io/assets/singapore.webp"
+      <a style="display: block;"><img class="center-fit" src="/assets/singapore.webp"
           loading="lazy" /><span class="smalltxt" style="text-align:center">Gardens by the Bay, SGP</span></a>
-      <a style="display: block;"><img class="center-fit" src="/d-r-n.github.io/assets/ranch_stars.webp"
+      <a style="display: block;"><img class="center-fit" src="/assets/ranch_stars.webp"
           loading="lazy" /><span class="smalltxt" style="text-align:center">Richards, TX</span></a>
-      <a style="display: block;"><img class="center-fit" src="/d-r-n.github.io/assets/ranch_stars2.webp"
+      <a style="display: block;"><img class="center-fit" src="/assets/ranch_stars2.webp"
           loading="lazy" /><span class="smalltxt" style="text-align:center">Richards, TX</span></a>
-      <a style="display: block;"><img class="center-fit" src="/d-r-n.github.io/assets/deck_lightning.webp"
+      <a style="display: block;"><img class="center-fit" src="/assets/deck_lightning.webp"
           loading="lazy" /><span class="smalltxt" style="text-align:center">Austin, TX</span></a>
-      <a style="display: block;"><img class="center-fit" src="/d-r-n.github.io/assets/fort_cochin.webp"
+      <a style="display: block;"><img class="center-fit" src="/assets/fort_cochin.webp"
           loading="lazy" /><span class="smalltxt" style="text-align:center">Cochin, Kerala, India</span></a>
-      <a style="display: block;"><img class="center-fit" src="/d-r-n.github.io/assets/tekapo.webp"
+      <a style="display: block;"><img class="center-fit" src="/assets/tekapo.webp"
           loading="lazy" /><span class="smalltxt    " style="text-align:center">Lake Tekapo, NZ</span></a>
     </section>
   </div>
@@ -443,7 +542,7 @@
 <footer class="site-footer">
   <div class="wrap">
     <div style="text-align:center">
-      <a href="https://dylannikol.com/"> <img src="/d-r-n.github.io/assets/8bitproilepic.jpg" height="32px"></a><br>
+      <a href="https://dylannikol.com/"> <img src="/assets/8bitproilepic.jpg" height="32px"></a><br>
       <a href="https://twitter.com/dylanrnikol"><i class="fa fa-twitter fa-twitter_2" aria-hidden="true"></i></a>
       <a href="https://github.com/d-r-n"><i class="fa fa-github fa-github_2" aria-hidden="true"></i></a>
     </div>
