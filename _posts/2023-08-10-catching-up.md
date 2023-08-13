@@ -51,7 +51,7 @@ We look at all internal data&mdash;databases, files, communication channels&mdas
 
 As three technical founders, we dove into product development right away. However, we recognized from the start that the "chat with your data" market is highly saturated. What sets us apart is our unique problem-solving approach. We began by building a simple interface that can answer the questions with the highest friction. In just one week, we demo'd our insight generation engine to prospective clients. It took us four days to secure a design partnership and close a $50k deal.
 
-Now, we're refining our V1 and in discussions with new customers for potential deals. Alex just flew back to Germany so we can incorporate and navigate securing a visa for him (why does the US make this so hard?).
+Now, we're refining our V1 and in discussions with potential new customers. Alex flew back to Germany so we can incorporate and navigate securing a visa for him (why does the US make this so hard?).
 
 Meanwhile, Samir and I are putting in hard work from our makeshift home office.
 
