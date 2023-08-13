@@ -33,7 +33,7 @@ Alex and I instantly clicked. It was the feeling when you meet someone and you j
 
 Funnily enough, it didn’t occur to either of us to start working together&mdash;we just naturally began helping each other with our products.
 
-All of a sudden, Samir, Alex, and I found ourselves in nightly brainstorming sessions. But something was still missing. Each of us took pride in what we had built individually, but we had a shared hunger for more. We wanted to tackle bigger problems, help broader audiences, and leave a mark on a larger canvas. Amidst this realization, a common thread surfaced:
+All of a sudden, Samir, Alex, and I found ourselves in nightly brainstorming sessions. But something was still missing. Each of us took pride in what we had built individually, but we had a shared hunger for more. We wanted to tackle bigger problems, help broader audiences, and leave a mark on a larger canvas. Amidst this confession, a common thread surfaced:
 
 Each of us intimately understood the pain of inefficient information flow within companies, but from different perspectives. Alex as a CTO guiding data teams and making decisions for the company, Samir as an engineer building information pipelines, and me as a data scientist conducting analysis and building an auto-insight engine. This gave us an unfair advantage in solving this problem.
 
