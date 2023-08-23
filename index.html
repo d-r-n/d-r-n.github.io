@@ -2,15 +2,14 @@
 <html>
 
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y3YZC398YT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y3YZC398YT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-Y3YZC398YT');
-</script>
+    gtag('config', 'G-Y3YZC398YT');
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
@@ -89,7 +88,7 @@
       margin-top: -60px;
     }
 
-    @media screen and (max-width: 576px) {
+    /* @media screen and (max-width: 576px) {
       .header {
         display: none;
       }
@@ -97,7 +96,7 @@
       .main {
         padding-top: 10px;
       }
-    }
+    } */
 
     .smalltxt {
       font-weight: normal;
@@ -206,7 +205,7 @@
       display: inline-block;
     }
 
-    @media screen and (max-width: 576px) {
+    /* @media screen and (max-width: 576px) {
       .navigation {
         display: none;
       }
@@ -225,6 +224,7 @@
         padding: 20px 10px;
         font-size: 14px;
       }
+
     }
 
     @media screen and (max-width: 576px) {
@@ -232,7 +232,8 @@
         width: 100%;
         height: auto;
       }
-    }
+
+    } */
 
     .scroll-padding {
       scroll-padding-top: 70px;
@@ -250,7 +251,7 @@
       padding-bottom: 1rem;
     }
 
-    @media screen and (max-width: 576px) {
+    /* @media screen and (max-width: 576px) {
       .fa {
         font-size: 1rem;
         width: 1rem;
@@ -265,7 +266,7 @@
       .email-row {
         display: block;
       }
-    }
+    } */
 
 
     .fa-github_2 {
@@ -300,7 +301,7 @@
 
     .timespan {
       grid-column: span 1;
-      font-size: 14px;
+      /* font-size: 14px; */
       text-align: right;
       padding-right: 5px;
       color: #bbb;
@@ -327,9 +328,60 @@
     .desc {
       grid-column: span 10;
       vertical-align: top;
-      font-size: 16px;
+      /* font-size: 16px; */
       padding-left: 20px;
       padding-bottom: 20px;
+    }
+
+    @media screen and (max-width: 576px) {
+
+      /* Hide header on smaller screens */
+      .header {
+        display: none;
+      }
+
+      /* Adjust padding for main content */
+      .main {
+        padding-top: 10px;
+        padding: 20px 10px;
+        font-size: 14px;
+      }
+
+      /* Hide navigation on smaller screens */
+      .navigation {
+        display: none;
+      }
+
+      /* Center header items on smaller screens */
+      .header {
+        justify-content: center;
+      }
+
+      /* Display sidenav on smaller screens */
+      .sidenav {
+        display: block;
+      }
+
+      /* Adjust font size and width for icons on smaller screens */
+      .fa {
+        font-size: 1rem;
+        width: 1rem;
+      }
+
+      /* Hide header right and show email row on smaller screens */
+      .header-right {
+        display: none;
+      }
+
+      .email-row {
+        display: block;
+      }
+
+      /* Adjust image width on smaller screens */
+      .center-fit {
+        width: 100%;
+        height: auto;
+      }
     }
   </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -490,9 +542,11 @@
           </div>
           <div class="desc">
             MSBA at the University of Texas at Austin where I worked with <a
-              href="https://www.mccombs.utexas.edu/faculty-and-research/faculty-directory/sheridan-titman/" target="_blank">Sheridan
+              href="https://www.mccombs.utexas.edu/faculty-and-research/faculty-directory/sheridan-titman/"
+              target="_blank">Sheridan
               Titman</a> and <a
-              href="https://www.mccombs.utexas.edu/faculty-and-research/faculty-directory/michael-sury/" target="_blank">Michael
+              href="https://www.mccombs.utexas.edu/faculty-and-research/faculty-directory/michael-sury/"
+              target="_blank">Michael
               Sury</a> on building machine learning models for predicting stock returns and default probabilities.
           </div>
         </div>
@@ -523,7 +577,8 @@
           <source src="/assets/A_eye_demo.mp4" type="video/mp4">
         </video>
         <p>2021 NFL Data Bowl: Predicting NFL Pass Completion (<a
-            href="https://dylanrnikol.medium.com/predicting-nfl-pass-completion-35c2fa487094" target="_blank">Article</a>)</p>
+            href="https://dylanrnikol.medium.com/predicting-nfl-pass-completion-35c2fa487094"
+            target="_blank">Article</a>)</p>
         <img class="center-fit" src="/assets/nfl.gif" />
         <p><a href="https://www.youtube.com/watch?v=QOSBj1UQgY4">a 15yo with a gopro</a></p>
       </ul>
