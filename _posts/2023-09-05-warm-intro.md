@@ -39,7 +39,7 @@ So we self-examined.
 
 With these insights, we licked our wounds and tapped back into our connections for intros.
 
-The results speak for themselves: 90%+ response rate and 60% converted into meetings so far. Plus, we're in early-stage discussions with two $100M+ companies and one $100B+ company.
+The results speak for themselves: 90%+ response rate and 60% converted into meetings so far. Plus, we're in early discussions with two $100M+ companies and one $100B+ company.
 
 Warm intros are significantly better than cold outreach because they provide instant credibility. Without credibility, no one pays you any interest. Given that we're early stage&mdash;with no marketing collateral, advertisement budget, or even a website&mdash;our most cost effective strategy is to leverage connections by seeking introductions.
 
