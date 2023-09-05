@@ -374,7 +374,7 @@
 
         <button type="submit">Submit</button>
       </form>
-      <p id="form-status" hidden>Form Submitted Successfully!</p>
+      <p id="form-status1" hidden>Form Submitted Successfully!</p>
     </div>
   </div>
   <div class="main">
@@ -405,7 +405,7 @@
 
         <button type="submit">Submit</button>
       </form>
-      <p id="form-status" hidden>Form Submitted Successfully!</p>
+      <p id="form-status2" hidden>Form Submitted Successfully!</p>
     </div>
     <section id="updates" class="section-anchor">
       <h3>updates</h3>
@@ -574,31 +574,36 @@
   </div>
 </footer>
 <script>
-  document.querySelector('.email-row .email-form').addEventListener('submit', function (e) {
-    e.preventDefault();
+  document.querySelectorAll('.email-form').forEach((form, index) => {
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
 
-    var xhr = new XMLHttpRequest();
-    xhr.open('POST', 'https://formspree.io/f/xwkdbrvg', true);
-    xhr.setRequestHeader('Accept', 'application/json');
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', 'https://formspree.io/f/xwkdbrvg', true);
+        xhr.setRequestHeader('Accept', 'application/json');
 
-    xhr.onreadystatechange = function () {
-      if (xhr.readyState !== XMLHttpRequest.DONE) return;
-      var formStatus = document.getElementById('form-status-2');
-      if (xhr.status === 200) {
-        e.target.reset(); // clear form on successful submission
-        formStatus.textContent = 'Form Submitted Successfully!';
-        formStatus.style.display = 'block'; // shows the success message
-      } else {
-        formStatus.textContent = 'Submission failed: ' + xhr.status;
-        formStatus.style.display = 'block'; // shows the error message
-      }
+        var formStatus = document.getElementById('form-status' + (index + 1));
 
-      setTimeout(function () {
-        formStatus.style.display = 'none'; // hides the success/error message after 5 seconds
-      }, 5000);
-    }
-    xhr.send(new FormData(e.target));
-  });
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState !== XMLHttpRequest.DONE) return;
+            
+            if (xhr.status === 200) {
+                e.target.reset(); // clear form on successful submission
+                formStatus.textContent = 'Form Submitted Successfully!';
+                formStatus.style.display = 'block'; // shows the success message
+            } else {
+                formStatus.textContent = 'Submission failed: ' + xhr.status;
+                formStatus.style.display = 'block'; // shows the error message
+            }
+
+            setTimeout(function () {
+                formStatus.style.display = 'none'; // hides the success/error message after 3 seconds
+            }, 3000);
+        }
+
+        xhr.send(new FormData(e.target));
+    });
+});
 </script>
 
 </html>
