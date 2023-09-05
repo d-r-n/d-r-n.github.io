@@ -27,13 +27,13 @@ Our wise friend <a href="https://twitter.com/amit_ajwani" target="_blank">Amit</
 
 Why we've been sucking at sales:<sup>*</sup>
 
-We started the month targeting production companies with cold outreach. Leaning into production companies felt natural given our understanding of their pain points and data routines. Plus, we know we can easily translate what we've built for our first customer to many more.
+We started the month targeting production companies with cold outreach. Leaning into production companies felt natural given our understanding of their pain points and data routines. Plus, we can easily translate what we've built for our first customer to many more.
 
 This was absolutely brutal. Despite our personalized messages and enthusiastic pitches, the response rate was 0%.
 
 So we self-examined.
 
-- <strong>Why production companies?</strong> Well, for one, we know their general data retrieval & analysis routines. We learned this from our customer. Second, we know we can replicate the success we've had with them. But, our product is inherently problem-oriented&mdash;we solve a general problem that every company struggles with. So why limit ourselves to production companies?
+- <strong>Why production companies?</strong> Well, for one, we know their general data retrieval & analysis routines. We learned this from our customer. Second, we think we can replicate the success we've had with them. But, our product is inherently problem-oriented&mdash;we solve a general problem that every company struggles with. So why limit ourselves to production companies?
 
 - <strong>Why cold outreach?</strong> We exhausted our network. Wrong! We hadn't even come close to exhausting our network. We overlooked the potential of our connections. In other words, we were being dumb.
 
