@@ -43,7 +43,7 @@ The results speak for themselves: 90%+ response rate and 60% converted into meet
 
 Warm intros are significantly better than cold outreach because they provide instant credibility. Without credibility, no one pays you any interest. Given that we're early stage&mdash;with no marketing collateral, advertisement budget, or even a website&mdash;our most cost effective strategy is to leverage connections by seeking introductions.
 
-In Septemeber, we're doubling down on this approach to hit our target of $5k MRR. To build credibility without relying on others, we're developing a case study with one of our customers as a testament to the value we deliver and the return on investment we provide. We plan to finish this by the end of the quarter.
+Now, we're doubling down on this approach to hit our target of $5k MRR. To build credibility without relying on others, we're developing a case study with one of our customers as a testament to the value we deliver and the return on investment we provide. We plan to finish this by the end of the quarter.
 
 This shit is hard, but damn it's fun.
 <hr>
