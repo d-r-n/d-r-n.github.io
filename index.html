@@ -564,20 +564,33 @@
 </footer>
 
 <script>
-  // Assuming that form submission prevents default behavior and uses AJAX
-  const form = document.querySelector('.email-form');
-  const formStatusMessage = document.querySelector('#form-status');
+  // Call the Google reCAPTCHA v3 script onload event
+  grecaptcha.ready(async function() {
+    const forms = document.querySelectorAll('.email-form');
+    for(let form of forms) {
+      form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        grecaptcha.execute('6LdgZQAoAAAAANgX2abgeOuj8WEpdbwJFQFMOmr_', { action: 'submit' }).then(function(token) {
+          // Add new hidden input with g-recaptcha-response
+          let recaptchaInput = document.createElement("input");
+          recaptchaInput.type = "hidden";
+          recaptchaInput.value = token;
+          recaptchaInput.className = "g-recaptcha-response";
+          form.appendChild(recaptchaInput);
+          
+          // TODO: Add AJAX form submission here
+          // Note: Google's reCAPTCHA token should also be validated server-side
 
-  form.addEventListener('submit', function(evt) {
-    evt.preventDefault();
-
-    // AJAX form submission goes here
-    
-    // Show success message
-    formStatusMessage.style.display = 'block';
+          // Show success message (only client-side, not linked to the actual server response)
+          const formStatusMessage = form.nextElementSibling;
+          formStatusMessage.style.display = 'block';
+          
+          // Clean inserted input for next time
+          form.removeChild(recaptchaInput);
+        });
+      });
+    }
   });
-
-  // TODO: Add implementation for AJAX form submission.
 </script>
 
 </html>
