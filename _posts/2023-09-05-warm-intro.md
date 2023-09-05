@@ -3,7 +3,7 @@ layout: post
 comments: true
 title:  "This shit is hard"
 excerpt: ""
-date:   2023-09-04
+date:   2023-09-05
 mathjax: false
 ---
 
