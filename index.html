@@ -366,13 +366,12 @@
 
     <div class="header-right">
       <div class="subscribe-text">subscribe for updates</div>
-      <form
-        action="https://formspree.io/f/xwkdbrvg" method="post" class="email-form">
+      <form action="https://formspree.io/f/xwkdbrvg" method="post" class="email-form">
         <input type="email" name="email" id="email" placeholder="Enter your email" required>
 
         <!-- The following is a spam filter field (honeypot) -->
         <input type="text" name="_gotcha" style="display:none" />
-        
+
         <button type="submit">Submit</button>
       </form>
       <p id="form-status" hidden>Form Submitted Successfully!</p>
@@ -398,11 +397,9 @@
     </div>
     <div class="email-row">
       <p>subscribe for updates</p>
-      <form
-        action="https://formspree.io/f/xwkdbrvg"
-        method="post" class="email-form">
+      <form action="https://formspree.io/f/xwkdbrvg" method="post" class="email-form">
         <input type="email" name="email" id="email" placeholder="Enter your email" required>
-        
+
         <!-- The following is spam filter field (honeypot) -->
         <input type="text" name="_gotcha" style="display:none" />
 
@@ -415,7 +412,8 @@
       <ul>
         September 2023 &mdash; <a href="https://dylannikol.com/2023/09/05/warm-intro.html">This shit is hard</a>
         <br>
-        August 2023 &mdash; <a href="https://dylannikol.com/2023/08/10/catching-up.html">Our journey so far and what's brewing</a>
+        August 2023 &mdash; <a href="https://dylannikol.com/2023/08/10/catching-up.html">Our journey so far and what's
+          brewing</a>
         <br>
       </ul>
     </section>
@@ -576,30 +574,31 @@
   </div>
 </footer>
 <script>
-  document.querySelector('.email-form').addEventListener('submit', function(e) {
+  document.querySelector('.email-row .email-form').addEventListener('submit', function (e) {
     e.preventDefault();
-    
+
     var xhr = new XMLHttpRequest();
     xhr.open('POST', 'https://formspree.io/f/xwkdbrvg', true);
     xhr.setRequestHeader('Accept', 'application/json');
-    
-    xhr.onreadystatechange = function() {
+
+    xhr.onreadystatechange = function () {
       if (xhr.readyState !== XMLHttpRequest.DONE) return;
-      var formStatus = document.getElementById('form-status');
+      var formStatus = document.getElementById('form-status-2');
       if (xhr.status === 200) {
-        e.target.reset(); // Clear form on successful submission
+        e.target.reset(); // clear form on successful submission
         formStatus.textContent = 'Form Submitted Successfully!';
-        formStatus.style.display = 'block'; // Shows the success message
+        formStatus.style.display = 'block'; // shows the success message
       } else {
         formStatus.textContent = 'Submission failed: ' + xhr.status;
-        formStatus.style.display = 'block'; // Shows the error message
+        formStatus.style.display = 'block'; // shows the error message
       }
-  
-      setTimeout(function() {
-        formStatus.style.display = 'none'; // Hide the success/error message after 5 seconds
+
+      setTimeout(function () {
+        formStatus.style.display = 'none'; // hides the success/error message after 5 seconds
       }, 5000);
     }
     xhr.send(new FormData(e.target));
   });
-  </script>  
+</script>
+
 </html>
