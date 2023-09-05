@@ -10,6 +10,7 @@
 
     gtag('config', 'G-Y3YZC398YT');
   </script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
@@ -362,10 +363,15 @@
       <div class="subscribe-text">subscribe for updates</div>
       <form
         action="https://docs.google.com/forms/d/e/1FAIpQLSdNVKtc3QboZtEPyTrJYq5u260ESmjcrxpIKPuI-Hfl95Z5ng/formResponse"
-        method="post" target="_blank" class="email-form">
+        method="post" class="email-form">
         <input type="email" name="entry.1797456602" id="email" placeholder="Enter your email" required>
+
+        <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY" data-callback="correctCaptcha"></div>
+
         <button type="submit">Submit</button>
       </form>
+
+      <p id="form-status" hidden>Form Submitted Successfully!</p>
     </div>
   </div>
   <div class="main">
@@ -559,5 +565,22 @@
     </div>
   </div>
 </footer>
+
+<script>
+  // Assuming that form submission prevents default behavior and uses AJAX
+  const form = document.querySelector('.email-form');
+  const formStatusMessage = document.querySelector('#form-status');
+
+  form.addEventListener('submit', function(evt) {
+    evt.preventDefault();
+
+    // AJAX form submission goes here
+    
+    // Show success message
+    formStatusMessage.style.display = 'block';
+  });
+
+  // TODO: Add implementation for AJAX form submission.
+</script>
 
 </html>
