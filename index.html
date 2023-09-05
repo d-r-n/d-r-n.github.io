@@ -10,7 +10,6 @@
 
     gtag('config', 'G-Y3YZC398YT');
   </script>
-  <!-- <script src="https://www.google.com/recaptcha/api.js?render=6LdgZQAoAAAAANgX2abgeOuj8WEpdbwJFQFMOmr_"></script> -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
@@ -403,7 +402,7 @@
 
         <button type="submit">Submit</button>
       </form>
-      <p id="form-status-2" hidden>Form Submitted Successfully!</p>
+      <p id="form-status" hidden>Form Submitted Successfully!</p>
     </div>
     <section id="updates" class="section-anchor">
       <h3>updates</h3>
@@ -569,35 +568,27 @@
     </div>
   </div>
 </footer>
-
 <script>
-  // Call the Google reCAPTCHA v3 script onload event
-  // grecaptcha.ready(async function() {
-  //   const forms = document.querySelectorAll('.email-form');
-  //   for(let form of forms) {
-  //     form.addEventListener('submit', function(event) {
-  //       event.preventDefault();
-  //       grecaptcha.execute('6LdgZQAoAAAAANgX2abgeOuj8WEpdbwJFQFMOmr_', { action: 'submit' }).then(function(token) {
-  //         // Add new hidden input with g-recaptcha-response
-  //         let recaptchaInput = document.createElement("input");
-  //         recaptchaInput.type = "hidden";
-  //         recaptchaInput.value = token;
-  //         recaptchaInput.className = "g-recaptcha-response";
-  //         form.appendChild(recaptchaInput);
-          
-  //         // TODO: Add AJAX form submission here
-  //         // Note: Google's reCAPTCHA token should also be validated server-side
-
-  //         // Show success message (only client-side, not linked to the actual server response)
-  //         const formStatusMessage = form.nextElementSibling;
-  //         formStatusMessage.style.display = 'block';
-          
-  //         // Clean inserted input for next time
-  //         form.removeChild(recaptchaInput);
-  //       });
-  //     });
-  //   }
-  // });
-</script>
-
+  document.querySelector('.email-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', 'https://formspree.io/f/xwkdbrvg', true);
+    xhr.setRequestHeader('Accept', 'application/json');
+    
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        e.target.reset(); // Clear form on successful submission
+        document.getElementById('form-status').textContent = 'Form Submitted Successfully!';
+        document.getElementById('form-status').style.display = 'block'; // Shows the success message
+      } else {
+        document.getElementById('form-status').textContent = 'Submission failed: ' + xhr.status;
+        document.getElementById('form-status').style.display = 'block'; // Shows the error message
+      }
+    }
+    xhr.send(new FormData(e.target));
+  });
+  </script>
+  
 </html>
