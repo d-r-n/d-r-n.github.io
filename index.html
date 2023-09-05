@@ -362,9 +362,12 @@
     <div class="header-right">
       <div class="subscribe-text">subscribe for updates</div>
       <form
-        action="https://docs.google.com/forms/d/e/1FAIpQLSdNVKtc3QboZtEPyTrJYq5u260ESmjcrxpIKPuI-Hfl95Z5ng/formResponse"
-        method="post" class="email-form">
-        <input type="email" name="entry.1797456602" id="email" placeholder="Enter your email" required>
+        action="https://formspree.io/f/xwkdbrvg" method="post" class="email-form">
+        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+
+        <!-- The following is a spam filter field (honeypot) -->
+        <input type="text" name="_gotcha" style="display:none" />
+        
         <button type="submit">Submit</button>
       </form>
       <p id="form-status" hidden>Form Submitted Successfully!</p>
@@ -390,10 +393,14 @@
     </div>
     <div class="email-row">
       <p>subscribe for updates</p>
-      <form class="center"
-        action="https://docs.google.com/forms/d/e/1FAIpQLSdNVKtc3QboZtEPyTrJYq5u260ESmjcrxpIKPuI-Hfl95Z5ng/formResponse"
+      <form
+        action="https://formspree.io/f/xwkdbrvg"
         method="post" class="email-form">
-        <input type="email" name="entry.1797456602" id="email" placeholder="Enter your email" required>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        
+        <!-- The following is spam filter field (honeypot) -->
+        <input type="text" name="_gotcha" style="display:none" />
+
         <button type="submit">Submit</button>
       </form>
       <p id="form-status-2" hidden>Form Submitted Successfully!</p>
