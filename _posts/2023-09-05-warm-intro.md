@@ -63,4 +63,4 @@ This shit is hard, but damn it's fun.
      alt="the team at buildspace"
      style="max-width: 800px; width: 100%; height: auto;">
 
-<sup>*</sup>Granted, it's only been a month. I'm a Bayesian, so I'll reevaluate our skills as we collect more data points.
+<sup>*</sup>Granted, it's only been a month. I'm a Bayesian, so I'll reevaluate as we collect more data points.
