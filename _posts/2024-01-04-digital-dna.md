@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title:  "Reframing AI as Digital DNA"
+title:  "AI is Digital DNA"
 excerpt: ""
 date:   2024-01-04
 mathjax: false
