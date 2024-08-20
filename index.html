@@ -1,614 +1,272 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y3YZC398YT"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-Y3YZC398YT');
-  </script>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dylan Nikol - Mac System 7 Style</title>
   <style>
-    body {
-      font-family: "Lato", sans-serif;
+    @font-face {
+      font-family: 'Chicago';
+      src: url('https://cdn.jsdelivr.net/npm/@fontsource/chicago@4.5.0/files/chicago-400-normal.woff2') format('woff2');
     }
 
-    .header {
+    body {
+      font-family: 'Chicago', 'Courier New', monospace;
+      background-color: #DDDDDD;
+      margin: 0;
+      padding: 0;
+      font-size: 12px;
+      color: #000000;
+    }
+
+    .menu-bar {
+      background-color: #FFFFFF;
+      border-bottom: 1px solid #000000;
+      padding: 2px 5px;
       display: flex;
       align-items: center;
-      position: fixed;
-      top: 0;
-      left: 0;
-      background-color: #222831;
-      z-index: 1000;
-      padding: 0.3rem;
-      width: 100%;
     }
 
-    .subscribe-text {
-      color: white;
-      font-size: .7rem;
+    .apple-logo {
+      width: 16px;
+      height: 16px;
+      margin-right: 20px;
     }
 
-    .header-right {
+    .close-box {
+      width: 16px;
+      height: 16px;
+      margin-right: 5px;
+    }
+
+    .icon-img {
+      width: 32px;
+      height: 32px;
+    }
+
+    .menu-item {
+      margin-right: 20px;
+    }
+
+    .window {
+      background-color: #FFFFFF;
+      border: 1px solid #000000;
+      width: 512px;
+      margin: 20px auto;
+      box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+    }
+
+    .title-bar {
+      background: linear-gradient(to right, #FFFFFF, #CCCCCC);
+      padding: 2px 5px;
+      border-bottom: 1px solid #000000;
       display: flex;
-      flex-direction: column;
-      position: absolute;
-      right: 1rem;
-      top: 0;
-      bottom: 0;
-      padding-bottom: 10px;
+      align-items: center;
     }
 
-    .email-form {
+    .title {
+      flex-grow: 1;
+      text-align: center;
+    }
+
+    .content {
       display: flex;
+      height: 342px;
     }
 
-    input[type="email"] {
-      padding: 4px 12px;
-      font-size: 12px;
-      border-radius: 4px;
-      border: 1px solid #ccc;
-      width: 100%;
-      max-width: 200px;
+    .sidebar {
+      width: 64px;
+      border-right: 1px solid #000000;
+      padding: 10px;
     }
 
-    button[type="submit"] {
-      margin-left: 2px;
-      padding: 4px 12px;
-      font-size: 12px;
-      background-color: #00ADB5;
-      color: #ffffff;
-      border: none;
-      border-radius: 4px;
+    .icon {
+      text-align: center;
+      margin-bottom: 20px;
       cursor: pointer;
     }
 
-    button[type="submit"]:hover {
-      background-color: #008B93;
-      opacity: 0.8;
-    }
-
-    .main {
-      margin-left: 120px;
-      font-size: 16px;
-      padding: 0px 10px;
-      padding-top: 60px;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-
-    .section-anchor::before {
-      content: "";
-      display: block;
-      height: 60px;
-      margin-top: -60px;
-    }
-
-    .smalltxt {
-      font-weight: normal;
-      font-size: 12px;
-    }
-
-    .smalltxt14 {
-      font-weight: normal;
-      font-size: 14px;
-    }
-
-    section {
-      margin-bottom: 3rem;
-    }
-
-    .header img {
-      float: left;
-      width: 2rem;
-      height: 2rem;
-      background: #555;
-    }
-
-    .header h1 {
-      position: relative;
-      top: 18px;
-      left: 10px;
-    }
-
-    img.center {
-      display: block;
-      margin: 0 auto;
-    }
-
-    .imgbox {
-      display: grid;
-      height: 50%;
-    }
-
-    .center-fit {
-      display: block;
-      max-width: 50%;
-      max-height: 50;
-      margin: 0 auto;
-      margin-bottom: 30px;
-    }
-
-    .fa {
+    .main-content {
+      flex-grow: 1;
       padding: 10px;
-      font-size: 10px;
-      width: 15px;
-      text-align: center;
-      text-decoration: none;
-      border-radius: 50%;
+      overflow-y: auto;
     }
 
-    .fa {
-      transition: transform 0.3s;
-    }
-
-    .fa:hover {
-      opacity: 0.7;
-    }
-
-    .fa-github {
-      background: #707070;
-      color: white;
-    }
-
-    .fa-twitter {
-      background: #707070;
-      color: white;
-    }
-
-    .fa-linkedin {
-      background: #707070;
-      color: white;
-    }
-
-    .tab {
-      display: inline-block;
-      margin-left: 80px;
-    }
-
-    a {
-      position: relative
-    }
-
-    a span {
+    .section {
       display: none;
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      padding: 8px;
-      background: rgba(255, 255, 255, .8);
     }
 
-    a:hover span {
-      display: block
+    .active {
+      display: block;
     }
 
-    .navigation a {
-      padding: 6px 8px 6px 16px;
-      text-decoration: none;
-      font-size: 16px;
-      color: #EEEEEE;
-      display: inline-block;
-    }
-
-    .scroll-padding {
-      scroll-padding-top: 70px;
-    }
-
-    .fa {
-      display: inline-block;
-      margin: 0 5px;
-    }
-
-    .email-row {
-      display: none;
-      text-align: center;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-    }
-
-    .fa-github_2 {
-      background: none;
-      color: #333;
-    }
-
-    .fa-github_2:hover {
-      opacity: 0.7;
-    }
-
-    .fa-twitter_2 {
-      background: none;
-      color: #1DA1F2;
-    }
-
-    .fa-twitter_2:hover {
-      opacity: 0.7;
-    }
-
-    .container {
-      margin-left: auto;
-      margin-right: auto;
-      padding-left: 15px;
-      padding-right: 15px;
-    }
-
-    .row {
+    .photo-gallery {
       display: grid;
-      grid-template-columns: repeat(12, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
     }
 
-    .timespan {
-      grid-column: span 1;
-      text-align: right;
-      padding-right: 5px;
-      color: #bbb;
+    .photo-item {
+      border: 1px solid #000000;
+      padding: 5px;
+      text-align: center;
     }
 
-    .ico {
-      grid-column: span 1;
-      vertical-align: top;
-      border-left: 2px solid #cfcfcf;
-      position: relative;
+    .photo-item img {
+      width: 100%;
+      height: auto;
+      border: 1px solid #000000;
     }
 
-    .entry-dot {
-      position: absolute;
-      top: 0px;
-      left: -8px;
-      width: 10px;
-      height: 10px;
-      border-radius: 7px;
-      background-color: #cfcfcf;
-      border: 2px solid white;
-    }
-
-    .desc {
-      grid-column: span 10;
-      vertical-align: top;
-      padding-left: 20px;
-      padding-bottom: 20px;
-    }
-
-    @media screen and (max-width: 576px) {
-
-      /* Hide header on smaller screens */
-      .header {
-        display: none;
-      }
-
-      /* Adjust padding for main content */
-      .main {
-        padding-top: 10px;
-        padding: 20px 10px;
-        font-size: 14px;
-      }
-
-      /* Hide navigation on smaller screens */
-      .navigation {
-        display: none;
-      }
-
-      /* Center header items on smaller screens */
-      .header {
-        justify-content: center;
-      }
-
-      /* Display sidenav on smaller screens */
-      .sidenav {
-        display: block;
-      }
-
-      /* Adjust font size and width for icons on smaller screens */
-      .fa {
-        font-size: 1rem;
-        width: 1rem;
-      }
-
-      /* Hide header right and show email row on smaller screens */
-      .header-right {
-        display: none;
-      }
-
-      .email-row {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-      }
-
-      /* Adjust image width on smaller screens */
-      .center-fit {
-        width: 100%;
-        height: auto;
-      }
+    .photo-item p {
+      margin: 5px 0 0;
+      font-size: 10px;
     }
   </style>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script>
-    function scrollToSection(elementId, padding) {
-      const element = document.getElementById(elementId);
-      const yOffset = -padding;
-      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-      window.scrollTo({ top: y, behavior: 'smooth' });
-    }
-
-    document.addEventListener("DOMContentLoaded", function () {
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-          e.preventDefault();
-          const targetId = this.getAttribute('href').slice(1);
-          scrollToSection(targetId, 0); // 0px padding to account for header height
-        });
-      });
-    });
-  </script>
-  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
 </head>
 
 <body>
-  <div class="header">
-    <a href="https://dylannikol.com/"><img src="/assets/8bitproilepic.jpg" height="32" loading="lazy"></a>
-    <div class="navigation">
-      <!-- <a href="#bio">bio</a> -->
-      <a href="#updates">Updates</a>
-      <a href="#blog">Blog</a>
-      <a href="#timeline">Timeline</a>
-      <a href="#misc">Misc</a>
-      <a href="#photos">Photos</a>
-    </div>
-
-    <div class="header-right">
-      <div class="subscribe-text">Subscribe for updates</div>
-      <form action="https://formspree.io/f/xwkdbrvg" method="post" class="email-form">
-        <input type="email" name="email" id="email" placeholder="Enter your email" required>
-
-        <!-- The following is a spam filter field (honeypot) -->
-        <input type="text" name="_gotcha" style="display:none" />
-
-        <button type="submit">Submit</button>
-      </form>
-      <p id="form-status1" hidden>Form Submitted Successfully!</p>
-    </div>
+  <div class="menu-bar">
+    <img src="assets/icons/SevenIcons/menu/apple.png" alt="Apple" class="apple-logo">
+    <div class="menu-item">File</div>
+    <div class="menu-item">Edit</div>
+    <div class="menu-item">View</div>
+    <div class="menu-item">Special</div>
   </div>
-  <div class="main">
-    <p style="text-align: center;"><img class="center" src="/assets/round_profile_pic.webp" loading="lazy" height="200">
-    </p>
-    <h1 align="center">Dylan Nikol</h1>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-      media="none" onload="if(media!='all')media='all'">
-    <div style="text-align:center; margin-top: -.6rem;">
-      <a href="https://twitter.com/dylanrnikol" class="fa fa-twitter"></a>
-      <a href="https://www.linkedin.com/in/dylan-nikol" class="fa fa-linkedin"></a>
-      <a href="https://github.com/d-r-n" class="fa fa-github"></a>
+  <div class="window">
+    <div class="title-bar">
+      <img src="assets/icons/SevenIcons/menu/apple.png" alt="Close" class="close-box">
+      <div class="title">Dylan's Mac</div>
     </div>
-    <br>
-    <div class="mt-0" align="center">
-      <p align="center" style="color:#b3b3b3; max-width: 600px;">"The world has always been a sorry and confused sort of
-        place&ndash;yet poets and artists and scientists have ignored the factors that would, if attended to, paralyze
-        them."</p>
-      <p align="right" style="color:#b3b3b3; margin-top: -.6rem;max-width: 600px;">Abraham Flexner</p>
-    </div>
-    <div class="email-row">
-      <p>Subscribe for updates</p>
-      <form action="https://formspree.io/f/xwkdbrvg" method="post" class="email-form">
-        <input type="email" name="email" id="email" placeholder="Enter your email" required>
-
-        <!-- The following is spam filter field (honeypot) -->
-        <input type="text" name="_gotcha" style="display:none" />
-
-        <button type="submit">Submit</button>
-      </form>
-      <p id="form-status2" hidden>Form Submitted Successfully!</p>
-    </div>
-    <section id="updates" class="section-anchor">
-      <h3>Updates</h3>
-      <ul>
-        January 2024 &mdash; <a href="https://dylannikol.com/2024/01/06/launch.html">AI Labs Launch</a>
-        <br>
-        January 2024 &mdash; <a href="https://dylannikol.com/2024/01/03/pivot.html">A New Chapter</a>
-        <br>
-        September 2023 &mdash; <a href="https://dylannikol.com/2023/09/05/warm-intro.html">This shit is hard</a>
-        <br>
-        August 2023 &mdash; <a href="https://dylannikol.com/2023/08/10/catching-up.html">Our journey so far and what's
-          brewing</a>
-        <br>
-      </ul>
-    </section>
-    <section id="blog" class="section-anchor">
-      <h3>Blog</h3>
-      <ul>
-        <a href="https://dylannikol.com/2024/01/04/artificial-dna.html">AI is Artificial DNA</a>
-        <br>
-        <a href="https://dylannikol.com/2023/06/05/rethink-ad-model.html">Rethinking the Ad Revenue Model for Social
-          Media</a>
-        <br>
-        <a href="https://dylannikol.com/2023/02/23/turing.html">Turing Test Pitfall</a>
-        <br>
-        <a href="https://dylannikol.com/2023/02/05/preference-algorithms.html">Active-Control Preference Algorithms</a>
-      </ul>
-    </section>
-
-    <!-- <section id="bio" class="section-anchor">
-      <h3>bio</h3>
-      <ul>
-        <p>
-          A recovering data scientist building product in the wild.
-        </p>
-      </ul>
-      </section> -->
-    <section id="timeline" class="section-anchor">
-      <h3>Timeline</h3>
-      <div id="history" class="container">
-
-        <div class="entry row">
-          <div class="timespan">
-            2023
-          </div>
-          <div class="ico">
-            <div class="entry-dot"></div>
-            <img src="assets/stealth.png" class="center" style="max-width: 48px;">
-          </div>
-          <div class="desc">
-            Co-founder of AI Labs, Inc.
-            <br><br><br><br>
-          </div>
+    <div class="content">
+      <div class="sidebar">
+        <div class="icon" onclick="showSection('home')">
+          <img src="assets/icons/SevenIcons/actions/24/go-home-symbolic.png" alt="Home" class="icon-img">
+          <div>Home</div>
         </div>
-
-        <div class="entry row">
-          <div class="timespan">
-            2023
-          </div>
-          <div class="ico">
-            <div class="entry-dot"></div>
-            <img src="assets/prescene_logo.png" class="center" style="max-width: 58px;">
-          </div>
-          <div class="desc">
-            Built <a href="https://prescene.ai/" target="_blank">prescene.ai</a> with <a
-              href="https://www.linkedin.com/in/samir-epili/" target="_blank">Samir</a>
-            <br><br><br><br>
-          </div>
+        <div class="icon" onclick="showSection('timeline')">
+          <img src="assets/icons/SevenIcons/apps/32/office-calendar.png" alt="Timeline" class="icon-img">
+          <div>Timeline</div>
         </div>
-
-        <div class="entry row">
-          <div class="timespan">
-            2021 - 2023
-          </div>
-          <div class="ico">
-            <div class="entry-dot"></div>
-            <img src="assets/dell_logo.png" class="center" style="max-width: 48px;">
-          </div>
-          <div class="desc">
-             I was a data scientist in Applied AI Research & Engineering. I built econometric models to analyze incentives and machine learning models to forecast global sales compensation. I also did NLP research for investor relations.
-            <br><br>
-            $25M+ in savings, 20k+ hours in automation, and 2 patents for systems using LLMs with RL and graphs.<br><br>
-          </div>
+        <div class="icon" onclick="showSection('random')">
+          <img src="assets/icons/SevenIcons/places/32/folder-documents.png" alt="Random" class="icon-img">
+          <div>Random</div>
         </div>
-
-        <div class="entry row">
-          <div class="timespan">
-            2020 - 2021
-          </div>
-          <div class="ico">
-            <div class="entry-dot"></div>
-            <img src="assets/ut_logo.png" class="center" style="max-width: 48px;">
-          </div>
-          <div class="desc">
-            MSBA at the University of Texas at Austin where I worked with <a
-              href="https://www.mccombs.utexas.edu/faculty-and-research/faculty-directory/sheridan-titman/"
-              target="_blank">Sheridan
-              Titman</a> and <a
-              href="https://www.mccombs.utexas.edu/faculty-and-research/faculty-directory/michael-sury/"
-              target="_blank">Michael
-              Sury</a> on building machine learning models for predicting stock returns and default probabilities.
-          </div>
+        <!-- <div class="icon" onclick="showSection('quote')">
+          <img src="assets/icons/SevenIcons/places/32/folder-documents.png" alt="Quote" class="icon-img">
+          <div>Quote</div>
+        </div> -->
+        <div class="icon" onclick="showSection('blog')">
+          <img src="assets/icons/SevenIcons/apps/32/internet-news-reader.png" alt="Blog" class="icon-img">
+          <div>Blog</div>
         </div>
-
-        <div class="entry row">
-          <div class="timespan">
-            2016 - 2020
-          </div>
-          <div class="ico">
-            <div class="entry-dot"></div>
-            <img src="assets/ut_logo.png" class="center" style="max-width: 48px;">
-          </div>
-          <div class="desc">
-            BBA at the University of Texas at Austin with a major in finance and minor in management information
-            systems.
+        <div class="icon" onclick="showSection('photos')">
+          <img src="assets/icons/SevenIcons/devices/32/camera-photo.png" alt="Photos" class="icon-img">
+          <div>Photos</div>
+        </div>
+      </div>
+      <div class="main-content">
+        <div id="home" class="section active">
+          <h2>Dylan Nikol</h2>
+          <p>Hey, I'm Dylan. I live in Austin, TX. I like to climb, ski and wear cowboy boots. I'm building AI Labs,
+            Inc. with my buddies Samir and Alex. We make AI tools for the film industry. I write about AI, finance and
+            social media.</p>
+          <p>If you're working on something cool and want to chat, hit me up at dylan@prescene.ai</p>
+        </div>
+        <div id="timeline" class="section">
+          <h2>Timeline</h2>
+          <ul>
+            <li>BBA '20 & MSBA '21, UT Austin</li>
+            <li>Applied AI Research & Engineering, Dell 2021-2023</li>
+            <li>2024 AI Labs, Inc.</li>
+          </ul>
+        </div>
+        <div id="random" class="section">
+          <h2>Random</h2>
+          <ul>
+            <li>A focus detection tool for zoom calls. Gently notifications if you look away from the camera.</li>
+            <li>A 15-yo with a gopro</li>
+          </ul>
+        </div>
+        <div id="quote" class="section">
+          <h2>Quote</h2>
+          <blockquote>
+            "The world has always been a sorry and confused sort of place–yet poets and artists and scientists have
+            ignored the factors that would, if attended to, paralyze them." - Abraham Flexner
+          </blockquote>
+        </div>
+        <div id="blog" class="section">
+          <h2>Blog</h2>
+          <ul>
+            <li><a href="#">AI is Artificial DNA</a></li>
+            <li><a href="#">Rethinking the Ad Revenue Model for Social Media</a></li>
+            <li><a href="#">Turing Test Pitfall</a></li>
+            <li><a href="#">Active-Control Preference Algorithms</a></li>
+          </ul>
+        </div>
+        <div id="photos" class="section">
+          <h2>Photos</h2>
+          <div class="photo-gallery">
+            <div class="photo-item">
+              <img src="/assets/tetons.webp" alt="Lake Jackson, Grand Teton National Park">
+              <p>Lake Jackson, Grand Teton National Park</p>
+            </div>
+            <div class="photo-item">
+              <img src="/assets/queenstown.webp" alt="Lake Wakatipu, Queenstown, NZ">
+              <p>Lake Wakatipu, Queenstown, NZ</p>
+            </div>
+            <div class="photo-item">
+              <img src="/assets/mtcook.webp" alt="Mount Cook National Park, NZ">
+              <p>Mount Cook National Park, NZ</p>
+            </div>
+            <div class="photo-item">
+              <img src="/assets/dubaidesert.webp" alt="Dubai, UAE">
+              <p>Dubai, UAE</p>
+            </div>
+            <div class="photo-item">
+              <img src="/assets/glacier.webp" alt="Glacier National Park, MT">
+              <p>Glacier National Park, MT</p>
+            </div>
+            <div class="photo-item">
+              <img src="/assets/singapore.webp" alt="Gardens by the Bay, SGP">
+              <p>Gardens by the Bay, SGP</p>
+            </div>
+            <div class="photo-item">
+              <img src="/assets/ranch_stars.webp" alt="Richards, TX">
+              <p>Richards, TX</p>
+            </div>
+            <div class="photo-item">
+              <img src="/assets/ranch_stars2.webp" alt="Richards, TX">
+              <p>Richards, TX (different image)</p>
+            </div>
+            <div class="photo-item">
+              <img src="/assets/deck_lightning.webp" alt="Austin, TX">
+              <p>Austin, TX</p>
+            </div>
+            <div class="photo-item">
+              <img src="/assets/fort_cochin.webp" alt="Cochin, Kerala, India">
+              <p>Cochin, Kerala, India</p>
+            </div>
+            <div class="photo-item">
+              <img src="/assets/tekapo.webp" alt="Lake Tekapo, NZ">
+              <p>Lake Tekapo, NZ</p>
+            </div>
           </div>
         </div>
       </div>
-
-    </section>
-    <section id="misc" class="section-anchor">
-      <h3>Misc</h3>
-      <ul>
-        <p><a href="https://prescene.ai">prescene.ai</a> &mdash; AI script coverage for movie scripts</p>
-        <img class="center-fit" src="/assets/prescene_ss.webp" loading="lazy" />
-        <p>A focus detection tool for zoom calls. Gently notifications if you look away from the camera.</p>
-        <video class="center-fit" width="640" height="360" autoplay loop muted playsinline>
-          <source src="/assets/A_eye_demo.mp4" type="video/mp4">
-        </video>
-        <p>2021 NFL Data Bowl: Predicting NFL Pass Completion (<a
-            href="https://dylanrnikol.medium.com/predicting-nfl-pass-completion-35c2fa487094"
-            target="_blank">Article</a>)</p>
-        <img class="center-fit" src="/assets/nfl.gif" />
-        <p><a href="https://www.youtube.com/watch?v=QOSBj1UQgY4">A 15-yo with a gopro</a></p>
-      </ul>
-    </section>
-    <section id="Photos" class="section-anchor">
-      <h3>photos</h3>
-      <a style="display: block;"><img class="center-fit" src="/assets/tetons.webp" loading="lazy" /><span
-          class="smalltxt" style="text-align:center">Lake Jackson, Grand Teton National Park</span></a>
-      <a style="display: block;"><img class="center-fit" src="/assets/queenstown.webp" loading="lazy" /><span
-          class="smalltxt" style="text-align:center">Lake Wakatipu, Queenstown, NZ</span></a>
-      <a style="display: block;"><img class="center-fit" src="/assets/mtcook.webp" loading="lazy" /><span
-          class="smalltxt" style="text-align:center">Mount Cook National Park, NZ</span></a>
-      <a style="display: block;"><img class="center-fit" src="/assets/dubaidesert.webp" loading="lazy" /><span
-          class="smalltxt" style="text-align:center">Dubai, UAE</span></a>
-      <a style="display: block;"><img class="center-fit" src="/assets/glacier.webp" loading="lazy" /><span
-          class="smalltxt" style="text-align:center">Glacier National Park, MT</span></a>
-      <a style="display: block;"><img class="center-fit" src="/assets/singapore.webp" loading="lazy" /><span
-          class="smalltxt" style="text-align:center">Gardens by the Bay, SGP</span></a>
-      <a style="display: block;"><img class="center-fit" src="/assets/ranch_stars.webp" loading="lazy" /><span
-          class="smalltxt" style="text-align:center">Richards, TX</span></a>
-      <a style="display: block;"><img class="center-fit" src="/assets/ranch_stars2.webp" loading="lazy" /><span
-          class="smalltxt" style="text-align:center">Richards, TX</span></a>
-      <a style="display: block;"><img class="center-fit" src="/assets/deck_lightning.webp" loading="lazy" /><span
-          class="smalltxt" style="text-align:center">Austin, TX</span></a>
-      <a style="display: block;"><img class="center-fit" src="/assets/fort_cochin.webp" loading="lazy" /><span
-          class="smalltxt" style="text-align:center">Cochin, Kerala, India</span></a>
-      <a style="display: block;"><img class="center-fit" src="/assets/tekapo.webp" loading="lazy" /><span
-          class="smalltxt    " style="text-align:center">Lake Tekapo, NZ</span></a>
-    </section>
-  </div>
-</body>
-<footer class="site-footer">
-  <div class="wrap">
-    <div style="text-align:center">
-      <a href="https://dylannikol.com/"> <img src="/assets/8bitproilepic.jpg" height="32px"></a><br>
-      <a href="https://twitter.com/dylanrnikol"><i class="fa fa-twitter fa-twitter_2" aria-hidden="true"></i></a>
-      <a href="https://github.com/d-r-n"><i class="fa fa-github fa-github_2" aria-hidden="true"></i></a>
     </div>
   </div>
-</footer>
-<script>
-  document.querySelectorAll('.email-form').forEach((form, index) => {
-    form.addEventListener('submit', function (e) {
-        e.preventDefault();
 
-        var xhr = new XMLHttpRequest();
-        xhr.open('POST', 'https://formspree.io/f/xwkdbrvg', true);
-        xhr.setRequestHeader('Accept', 'application/json');
-
-        var formStatus = document.getElementById('form-status' + (index + 1));
-
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState !== XMLHttpRequest.DONE) return;
-            
-            if (xhr.status === 200) {
-                e.target.reset(); // clear form on successful submission
-                formStatus.textContent = 'Form Submitted Successfully!';
-                formStatus.style.display = 'block'; // shows the success message
-            } else {
-                formStatus.textContent = 'Submission failed: ' + xhr.status;
-                formStatus.style.display = 'block'; // shows the error message
-            }
-
-            setTimeout(function () {
-                formStatus.style.display = 'none'; // hides the success/error message after 3 seconds
-            }, 3000);
-        }
-
-        xhr.send(new FormData(e.target));
-    });
-});
-</script>
+  <script>
+    function showSection(sectionId) {
+      const sections = document.getElementsByClassName('section');
+      for (let section of sections) {
+        section.classList.remove('active');
+      }
+      document.getElementById(sectionId).classList.add('active');
+    }
+  </script>
+</body>
 
 </html>
