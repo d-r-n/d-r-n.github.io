@@ -2,267 +2,49 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dylan Nikol</title>
-  <style>
-    @font-face {
-      font-family: 'Chicago';
-      src: url('https://cdn.jsdelivr.net/npm/@fontsource/chicago@4.5.0/files/chicago-400-normal.woff2') format('woff2');
-    }
-
-    body {
-      font-family: 'Chicago', 'Courier New', monospace;
-      background-color: #DDDDDD;
-      margin: 0;
-      padding: 0;
-      font-size: 12px;
-      color: #000000;
-    }
-
-    .menu-bar {
-      background-color: #FFFFFF;
-      border-bottom: 1px solid #000000;
-      padding: 2px 5px;
-      display: flex;
-      align-items: center;
-    }
-
-    .apple-logo {
-      width: 16px;
-      height: 16px;
-      margin-right: 20px;
-    }
-
-    .close-box {
-      width: 16px;
-      height: 16px;
-      margin-right: 5px;
-    }
-
-    .icon-img {
-      width: 32px;
-      height: 32px;
-    }
-
-    .icon-img-home {
-      width: 48px;
-      height: 48px;
-    }
-
-    .menu-item {
-      margin-right: 20px;
-    }
-
-    .window {
-      background-color: #FFFFFF;
-      border: 1px solid #000000;
-      width: 512px;
-      margin: 20px auto;
-      box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
-    }
-
-    .title-bar {
-      background: linear-gradient(to right, #FFFFFF, #CCCCCC);
-      padding: 2px 5px;
-      border-bottom: 1px solid #000000;
-      display: flex;
-      align-items: center;
-    }
-
-    .title {
-      flex-grow: 1;
-      text-align: center;
-    }
-
-    .content {
-      display: flex;
-      height: 360px;
-    }
-
-    .sidebar {
-      width: 64px;
-      border-right: 1px solid #000000;
-      padding: 10px;
-    }
-
-    .icon {
-      text-align: center;
-      margin-bottom: 20px;
-      cursor: pointer;
-    }
-
-    .main-content {
-      flex-grow: 1;
-      padding: 10px;
-      overflow-y: auto;
-    }
-
-    .section {
-      display: none;
-    }
-
-    .active {
-      display: block;
-    }
-
-    .photo-gallery {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
-    }
-
-    .photo-item {
-      border: 1px solid #000000;
-      padding: 5px;
-      text-align: center;
-    }
-
-    .photo-item img {
-      width: 100%;
-      height: auto;
-      border: 1px solid #000000;
-    }
-
-    .photo-item p {
-      margin: 5px 0 0;
-      font-size: 10px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dylan Nikol</title>
 </head>
 
 <body>
-  <div class="menu-bar">
-    <img src="assets/icons/SevenIcons/menu/apple.png" alt="Apple" class="apple-logo">
-    <div class="menu-item">File</div>
-    <div class="menu-item">Edit</div>
-    <div class="menu-item">View</div>
-    <div class="menu-item">Special</div>
-  </div>
-  <div class="window">
-    <div class="title-bar">
-      <img src="assets/icons/SevenIcons/actions/24/window-close.png" alt="Close" class="close-box">
-      <div class="title">Dylan Nikol</div>
-    </div>
-    <div class="content">
-      <div class="sidebar">
-        <div class="icon" onclick="showSection('home')">
-          <img src="assets/icons/SevenIcons/actions/24/go-home-symbolic.png" alt="Home" class="icon-img-home">
-          <div>Home</div>
-        </div>
-        <div class="icon" onclick="showSection('timeline')">
-          <img src="assets/icons/SevenIcons/apps/32/office-calendar.png" alt="Timeline" class="icon-img">
-          <div>Timeline</div>
-        </div>
-        <div class="icon" onclick="showSection('random')">
-          <img src="assets/icons/SevenIcons/places/32/folder-documents.png" alt="Random" class="icon-img">
-          <div>Random</div>
-        </div>
-        <div class="icon" onclick="showSection('blog')">
-          <img src="assets/icons/SevenIcons/apps/32/internet-news-reader.png" alt="Blog" class="icon-img">
-          <div>Blog</div>
-        </div>
-        <div class="icon" onclick="showSection('photos')">
-          <img src="assets/icons/SevenIcons/devices/32/camera-photo.png" alt="Photos" class="icon-img">
-          <div>Photos</div>
-        </div>
-      </div>
-      <div class="main-content">
-        <div id="home" class="section active">
-          <h2>Dylan Nikol</h2>
-          <p>Hey, I'm Dylan. I live in Austin, TX. I like to climb, ski and wear cowboy boots. I'm building AI Labs,
-            Inc. with my buddies Samir and Alex. We make AI tools for the film industry. I write about AI, finance and
-            social media.</p>
-          <p>If you're working on something cool and want to chat, hit me up at dylan@prescene.ai</p>
-        </div>
-        <div id="timeline" class="section">
-          <h2>Timeline</h2>
-          <ul>
-            <li>BBA '20 & MSBA '21, UT Austin</li>
-            <li>Applied AI Research & Engineering, Dell 2021-2023</li>
-            <li>2024 AI Labs, Inc.</li>
-          </ul>
-        </div>
-        <div id="random" class="section">
-          <h2>Random</h2>
-          <ul>
-            <li><a href="https://prescene.ai">prescene.ai</a> &mdash; AI script coverage for movie scripts</li>
-            <li>A focus detection tool for zoom calls. Gently notifications if you look away from the camera.</li>
-            <li>2021 NFL Data Bowl: Predicting NFL Pass Completion (<a href="https://dylanrnikol.medium.com/predicting-nfl-pass-completion-35c2fa487094" target="_blank">Article</a>)</li>
-            <li><a href="https://www.youtube.com/watch?v=QOSBj1UQgY4">A 15-yo with a gopro</a></li>
-          </ul>
-        </div>
-        <div id="blog" class="section">
-          <h2>Blog</h2>
-          <ul>
-            <li><a href="https://dylannikol.com/2024/01/04/artificial-dna.html">AI is Artificial DNA</a></li>
-            <li><a href="https://dylannikol.com/2023/06/05/rethink-ad-model.html">Rethinking the Ad Revenue Model for Social Media</a></li>
-            <li><a href="https://dylannikol.com/2023/02/23/turing.html">Turing Test Pitfall</a></li>
-            <li><a href="https://dylannikol.com/2023/02/05/preference-algorithms.html">Active-Control Preference Algorithms</a></li>
-          </ul>
-        </div>
-        <div id="photos" class="section">
-          <h2>Photos</h2>
-          <div class="photo-gallery">
-            <div class="photo-item">
-              <img src="/assets/tetons.webp" alt="Lake Jackson, Grand Teton National Park">
-              <p>Lake Jackson, Grand Teton National Park</p>
-            </div>
-            <div class="photo-item">
-              <img src="/assets/queenstown.webp" alt="Lake Wakatipu, Queenstown, NZ">
-              <p>Lake Wakatipu, Queenstown, NZ</p>
-            </div>
-            <div class="photo-item">
-              <img src="/assets/mtcook.webp" alt="Mount Cook National Park, NZ">
-              <p>Mount Cook National Park, NZ</p>
-            </div>
-            <div class="photo-item">
-              <img src="/assets/dubaidesert.webp" alt="Dubai, UAE">
-              <p>Dubai, UAE</p>
-            </div>
-            <div class="photo-item">
-              <img src="/assets/glacier.webp" alt="Glacier National Park, MT">
-              <p>Glacier National Park, MT</p>
-            </div>
-            <div class="photo-item">
-              <img src="/assets/singapore.webp" alt="Gardens by the Bay, SGP">
-              <p>Gardens by the Bay, SGP</p>
-            </div>
-            <div class="photo-item">
-              <img src="/assets/ranch_stars.webp" alt="Richards, TX">
-              <p>Richards, TX</p>
-            </div>
-            <div class="photo-item">
-              <img src="/assets/ranch_stars2.webp" alt="Richards, TX">
-              <p>Richards, TX (different image)</p>
-            </div>
-            <div class="photo-item">
-              <img src="/assets/deck_lightning.webp" alt="Austin, TX">
-              <p>Austin, TX</p>
-            </div>
-            <div class="photo-item">
-              <img src="/assets/fort_cochin.webp" alt="Cochin, Kerala, India">
-              <p>Cochin, Kerala, India</p>
-            </div>
-            <div class="photo-item">
-              <img src="/assets/tekapo.webp" alt="Lake Tekapo, NZ">
-              <p>Lake Tekapo, NZ</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+    <h1>Dylan Nikol</h1>
 
-  <script>
-    function showSection(sectionId) {
-      const sections = document.getElementsByClassName('section');
-      for (let section of sections) {
-        section.classList.remove('active');
-      }
-      document.getElementById(sectionId).classList.add('active');
-    }
-  </script>
+    <p>Hey, I'm Dylan. I live in Austin, TX. I like to climb, ski and wear cowboy boots. I'm building AI Labs, Inc. with
+        my buddies Samir and Alex. We make AI tools for the film industry. I write about AI, finance and social media.
+    </p>
+
+    <h2>Blog</h2>
+    <ul>
+        <li><a href="https://dylannikol.com/2024/01/04/artificial-dna.html">AI is Artificial DNA</a></li>
+        <li><a href="https://dylannikol.com/2023/06/05/rethink-ad-model.html">Rethinking the Ad Revenue Model for Social
+                Media</a></li>
+        <li><a href="https://dylannikol.com/2023/02/23/turing.html">Turing Test Pitfall</a></li>
+        <li><a href="https://dylannikol.com/2023/02/05/preference-algorithms.html">Active-Control Preference
+                Algorithms</a></li>
+    </ul>
+
+
+    <h2>Timeline</h2>
+    <ul>
+        <li>BBA '20 & MSBA '21, UT Austin</li>
+        <li>Applied AI Research & Engineering, Dell 2021-2023</li>
+        <li>2024 AI Labs, Inc. (<a href="https://prescene.ai">prescene.ai</a>)</li>
+    </ul>
+
+    <h2>Random</h2>
+    <ul>
+        <li>A focus detection tool for zoom calls. Gently notifications if you look away from the camera.
+            <video class="center-fit" width="640" height="360" autoplay loop muted playsinline>
+                <source src="/assets/A_eye_demo.mp4" type="video/mp4">
+            </video>
+        </li>
+        <li>Predicting Pass Completion <img class="center-fit" src="/assets/nfl.gif" /></li>
+        <li><a href="https://www.youtube.com/watch?v=QOSBj1UQgY4">A 15-yo with a gopro</a></li>
+    </ul>
+
+    <p>If you're working on something cool and want to chat, hit me up at <a
+            href="mailto:dylan@prescene.ai">dylan@prescene.ai</a></p>
 </body>
 
 </html>
