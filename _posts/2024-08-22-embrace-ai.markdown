@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title:  "What is a Story"
+title:  "Why filmmakers should embrace AI"
 excerpt: ""
 date:   2024-08-22
 mathjax: false
