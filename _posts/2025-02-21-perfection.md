@@ -7,12 +7,14 @@ date:   2025-02-21
 mathjax: false
 ---
 
-Over the past two years as a founder, I’ve learned that in building successful products, perfection is only necessary where it matters. 
 
-Every task falls into one of two buckets:
-- **Mission-critical problems**: These demand 100% accuracy and anything less than perfect is unacceptable. Think autonomous driving, medical diagnoses, or banking transactions.
-- **Non-critical problems**: For these, around 80% accuracy is good enough, 90% is amazing. Examples of non-critical problems are googling for a chicken parmesan recipe or writing a blog post.
+**Perfection only matters when it matters.**
 
-Building a perfect solution for non-critical tasks is a waste of time. At the same time, trying to get 99% accuracy on a mission-critical task is a fool’s errand. We wasted a ton of time building a 99% accurate solution for a client who needed 100%—and they walked away.
+Every task fits in one of two buckets:
 
-Focus your effort on perfecting only mission critical things, and get everything else good enough to iterate later.
+- **Mission-critical:** Needs 100% accuracy. Anything less fails. 
+- **Non-critical:** 80% is good enough, 90% is great.
+
+Chasing perfection in the wrong places wastes time. I have spent a lot of time chasing perfection in things where it doesn't matter. I probably had to, to understand.
+
+Chasing perfection in the wrong places is wasted energy. I’ve done that plenty. Maybe I had to, to really understand this.
