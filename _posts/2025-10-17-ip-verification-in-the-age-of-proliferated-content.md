@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: "An Industry Protocol for IP Verification"
+title: "A Protocol for IP Verification"
 excerpt: ""
 date: 2025-10-17
 mathjax: false
