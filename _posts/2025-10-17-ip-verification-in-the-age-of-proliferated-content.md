@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: "An Industry Protocol for IP Verification in the Age of Proliferated Content"
+title: "An Cleari for IP Verification"
 excerpt: ""
 date: 2025-10-17
 mathjax: false
