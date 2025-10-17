@@ -1,15 +1,15 @@
 ---
 layout: post
 comments: true
-title: "An Cleari for IP Verification"
+title: "An Industry Protocol for IP Verification"
 excerpt: ""
 date: 2025-10-17
 mathjax: false
 ---
 
-We’ve entered the era of infinite content.
+We’ve entered the era of infinite content. 
 
-Generative AI has vaporized the cost of creation. Anything you can think of can be produced instantly, endlessly, at a cost rapidly approaching free.
+Anything you can think of can be produced instantly, endlessly, at a cost rapidly approaching free.
 
 Platforms are drowning in content. Moderation systems can’t keep up. Legal frameworks can’t keep up. The entire digital content economy is now exposed to a new form of liability.
 
