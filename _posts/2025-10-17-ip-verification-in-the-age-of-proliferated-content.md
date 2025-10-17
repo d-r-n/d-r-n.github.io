@@ -11,17 +11,15 @@ We’ve entered the era of infinite content.
 
 Anything you can think of can be produced instantly, endlessly, at a cost rapidly approaching free.
 
-Platforms are drowning in content. Moderation systems can’t keep up. Legal frameworks can’t keep up. The entire digital content economy is now exposed to a new form of liability.
-
 When anyone can create _anything_, they will. And much of that, will _belong to someone else_.
 
 Every platform that hosts or monetizes this output is liable for IP infringement.
 
-We need an **industry protocol** for verifying intellectual property.
+We need a protocol for verifying intellectual property.
 
 That protocol is **Aegis**.
 
-Aegis is the verification layer of the modern internet. It's a trust fabric that sits between user-generated content and publication.
+Aegis is the verification layer of the modern internet. It's a clearing house that sits between user-generated content and publication.
 
 A platform sends an API call (text, image, audio, video).
 Aegis compares it against a consolidated global database of registered IP.
