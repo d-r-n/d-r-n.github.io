@@ -7,8 +7,6 @@ date: 2025-10-17
 mathjax: false
 ---
 
-## **An Industry Protocol for IP Verification in the Age of Proliferated Content**
-
 We’ve entered the era of infinite content.
 
 Generative AI has vaporized the cost of creation. Anything you can think of can be produced instantly, endlessly, at a cost rapidly approaching free.
