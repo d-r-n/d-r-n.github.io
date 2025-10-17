@@ -1,9 +1,9 @@
 ---
 layout: post
 comments: true
-title:  "An Industry Protocol for IP Verification in the Age of Proliferated Content"
+title: "An Industry Protocol for IP Verification in the Age of Proliferated Content"
 excerpt: ""
-date:   2025-01-17
+date: 2025-10-17
 mathjax: false
 ---
 
@@ -15,7 +15,7 @@ Generative AI has vaporized the cost of creation. Anything you can think of can 
 
 Platforms are drowning in content. Moderation systems can’t keep up. Legal frameworks can’t keep up. The entire digital content economy is now exposed to a new form of liability.
 
-When anyone can create *anything*, they will. And much of that, will *belong to someone else*.
+When anyone can create _anything_, they will. And much of that, will _belong to someone else_.
 
 Every platform that hosts or monetizes this output is liable for IP infringement.
 
@@ -29,9 +29,9 @@ A platform sends an API call (text, image, audio, video).
 Aegis compares it against a consolidated global database of registered IP.
 It returns a structured response:
 
-* Similarity score
-* Ownership data
-* Recommended action: allow, block, flag, or micro-license
+- Similarity score
+- Ownership data
+- Recommended action: allow, block, flag, or micro-license
 
 Platforms reduce risk.
 Creators retain control.
@@ -43,9 +43,9 @@ To build the world’s verification layer, you need the world’s rights holders
 
 We’re inviting the incumbents to the table.
 
-* Major media conglomerates
-* Rights management organizations
-* Creator estates
+- Major media conglomerates
+- Rights management organizations
+- Creator estates
 
 These groups represent millions of works and billions in value. Their participation turns Aegis from a startup idea into an industry standard.
 
