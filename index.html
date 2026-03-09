@@ -1,68 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: default
+title: Dylan Nikol
+---
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dylan Nikol</title>
-</head>
+<h2>Dylan Nikol</h2>
 
-<style>
-    .center-fit {
-        display: block;
-        max-width: 50%;
-        max-height: 50;
-        margin: 0 auto;
-        margin-bottom: 30px;
-    }
-</style>
+<p>Hello, I'm Dylan. I like to make useful things. My friend Samir and I are
+  building <a href="https://prescene.ai">Prescene</a>.</p>
+<p>If you're working on something cool and want to chat, hit me up at dylan [at] prescene [dot] ai</p>
 
-<body>
-    <h2>Dylan Nikol</h2>
+<h4>Blog</h4>
+<ul class="post-list">
+  {% for post in site.posts %}
+  <li>
+    <span class="date">{{ post.date | date: "%Y-%m-%d" }}</span>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+  </li>
+  {% endfor %}
+</ul>
 
-    <p>Hello, I'm Dylan. I like to make useful things. My friend Samir and I are
-        building <a href="https://prescene.ai">Prescene</a>.
-    </p>
-    <p>If you're working on something cool and want to chat, hit me up at dylan [at] prescene [dot] ai</p>
+<h4>Timeline</h4>
+<ul>
+  <li>BBA '20 &amp; MSBA '21, UT Austin</li>
+  <li>Applied AI Research &amp; Engineering, Dell 2021-2023</li>
+  <li>Prescene 2023</li>
+</ul>
 
-    <h4>Blog</h4>
-    <ul>
-        <li><a href="https://dylannikol.com/2025/11/09/happiness.html">Happiness</a></li>
-        <li><a href="https://dylannikol.com/2025/10/17/ip-verification-in-the-age-of-proliferated-content.html">A
-                Protocol for IP Verification
-            </a></li>
-        <li><a href="https://dylannikol.com/2025/02/21/perfection.html">Focus on Perfection Only Where It Matters</a>
-        </li>
-        <li><a href="https://dylannikol.com/2024/08/22/ai-storytelling.html">Why AI Makes Storytelling Better</a></li>
-        <li><a href="https://dylannikol.com/2024/01/04/artificial-dna.html">AI is Artificial DNA</a></li>
-        <li><a href="https://dylannikol.com/2023/06/05/rethink-ad-model.html">Rethinking the Ad Revenue Model for Social
-                Media</a></li>
-        <li><a href="https://dylannikol.com/2023/02/23/turing.html">Turing Test Pitfall</a></li>
-        <li><a href="https://dylannikol.com/2023/02/05/preference-algorithms.html">Active-Control Preference
-                Algorithms</a></li>
-    </ul>
-
-
-    <h4>Timeline</h4>
-    <ul>
-        <li>BBA '20 & MSBA '21, UT Austin</li>
-        <li>Applied AI Research & Engineering, Dell 2021-2023</li>
-        <li>Prescene 2023</li>
-    </ul>
-
-    <h4>Random</h4>
-    <ul>
-        <li><a href="https://www.benchmark.food/">Benchmark</a> - Certified Plastic Free Food</li>
-        <li>A focus detection tool for zoom calls. Nudges if you look away from the camera. (August 2020)
-            <video class="center-fit" width="360" autoplay loop muted playsinline>
-                <source src="/assets/A_eye_demo.mp4" type="video/mp4">
-            </video>
-        </li>
-        <li>Predicting Pass Completion (2021 NFL Databowl) <img class="center-fit" src="/assets/nfl.gif" width="360" />
-        </li>
-        <li><a href="https://www.youtube.com/watch?v=QOSBj1UQgY4">2012</a></li>
-    </ul>
-
-</body>
-
-</html>
+<h4>Random</h4>
+<ul>
+  <li><a href="https://www.benchmark.food/">Benchmark</a> - Certified Plastic Free Food</li>
+  <li>A focus detection tool for zoom calls. Nudges if you look away from the camera. (August 2020)
+    <video class="center-fit" autoplay loop muted playsinline>
+      <source src="/assets/A_eye_demo.mp4" type="video/mp4">
+    </video>
+  </li>
+  <li>Predicting Pass Completion (2021 NFL Databowl) <img class="center-fit" src="/assets/nfl.gif" /></li>
+  <li><a href="https://www.youtube.com/watch?v=QOSBj1UQgY4">2012</a></li>
+</ul>
