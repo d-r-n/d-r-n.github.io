@@ -180,41 +180,6 @@ pre code {
   margin: 1.5rem auto;
 }
 
-/* ── Timeline ── */
-.timeline {
-  list-style: none;
-  padding-left: 1.25rem;
-  border-left: 2px solid #ddd;
-  margin-bottom: 1rem;
-}
-
-.timeline li {
-  position: relative;
-  padding-left: 1rem;
-  margin-bottom: 0.6rem;
-}
-
-.timeline li::before {
-  content: "";
-  position: absolute;
-  left: -1.6rem;
-  top: 0.55rem;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: #999;
-}
-
-.timeline li:first-child::before {
-  background: #2563eb;
-}
-
-.timeline-year {
-  color: #999;
-  font-size: 0.85rem;
-  margin-right: 0.4rem;
-}
-
 /* ── Media (homepage) ── */
 .center-fit {
   display: block;
