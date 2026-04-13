@@ -5,9 +5,19 @@ title: Dylan Nikol
 
 <h2>Dylan Nikol</h2>
 
-<p>I’m a builder based in Austin. I’m the co-founder and CEO of <a href="https://prescene.ai">Prescene</a>, where we’re building AI tools for the entertainment industry. Our platform is used by thousands of screenwriters, producers, and agents, as well as major film studios. I’m building it alongside <a href="https://www.linkedin.com/in/samir-epili">Samir</a>.</p>
+<p>I'm a builder based in Austin. Co-founder and CEO of <a href="https://prescene.ai">Prescene</a>, where we're building AI tools for the entertainment industry. Our platform is used by thousands of screenwriters, producers, and agents, as well as major film studios. Building it alongside <a href="https://www.linkedin.com/in/samir-epili">Samir</a>. Previously AI research at Dell. UT Austin BBA/MSBA.</p>
 
-<p>Outside of work, I spend time skiing and mountain biking. If you’re working on something interesting and want to connect, feel free to reach out — dylan[at]prescene[dot]ai.</p>
+<p>Outside of work, I spend time skiing and mountain biking. If you're working on something interesting and want to connect, feel free to reach out — dylan[at]prescene[dot]ai.</p>
+
+<h4>Blog</h4>
+<ul class="post-list">
+  {% for post in site.posts %}
+  <li>
+    <span class="date">{{ post.date | date: "%Y-%m-%d" }}</span>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+  </li>
+  {% endfor %}
+</ul>
 
 <h4>Projects</h4>
 <ul>
@@ -33,22 +43,6 @@ title: Dylan Nikol
     Predicting pass completion — 2021 NFL Big Data Bowl.
     <img class="center-fit" src="/assets/nfl.gif" />
   </li>
-</ul>
-
-<h4>Blog</h4>
-<ul class="post-list">
-  {% for post in site.posts %}
-  <li>
-    <span class="date">{{ post.date | date: "%Y-%m-%d" }}</span>
-    <a href="{{ post.url }}">{{ post.title }}</a>
-  </li>
-  {% endfor %}
-</ul>
-
-<h4>Background</h4>
-<ul>
-  <li>BBA '20 &amp; MSBA '21, UT Austin</li>
-  <li>Applied AI Research &amp; Engineering, Dell 2021–2023</li>
 </ul>
 
 <h4>Photography</h4>
