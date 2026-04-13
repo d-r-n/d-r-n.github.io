@@ -223,8 +223,8 @@ pre code {
 }
 
 .project-card p {
-  margin: 0 1.25rem;
-  padding-top: 1.25rem;
+  margin: 0;
+  padding: 1rem 1.25rem 1.25rem;
 }
 
 .project-card img,
@@ -232,11 +232,6 @@ pre code {
   display: block;
   width: 100%;
   height: auto;
-}
-
-.project-card a:has(img) {
-  display: block;
-  margin-top: 0.75rem;
 }
 
 /* ── Media (homepage) ── */
