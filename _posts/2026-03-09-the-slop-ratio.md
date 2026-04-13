@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title:  "The Slop Ratio"
+title: "The Slop Ratio"
 excerpt: "99% of LLM output is slop. We don't need more compute. We need better questions."
 date:   2026-03-09
 mathjax: false
